@@ -1,6 +1,5 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
-import Logo from '../images/logo.svg';
 
 const Sidebar: FC = () => {
   const [openMenu, setOpenMenu] = React.useState<string>('');
@@ -21,7 +20,7 @@ const Sidebar: FC = () => {
     );
   };
 
-  const MenuSection: FC<{ title: string; children }> = ({
+  const MenuSection: FC<{ title: string; children: any }> = ({
     title,
     children
   }) => {
@@ -31,7 +30,7 @@ const Sidebar: FC = () => {
         <div
           data-section={title}
           className={
-            'sidebar__section--content' +
+            'sidebar__section--content border' +
             (openMenu === title ? ' sidebar__section--visible' : '')
           }
         >
@@ -57,7 +56,7 @@ const Sidebar: FC = () => {
         <div className="sidebar__logo__image">
           <Link href="/">
             <a>
-              <Logo />
+              <img src="../images/logo.svg" alt="Vlogology" />
             </a>
           </Link>
         </div>

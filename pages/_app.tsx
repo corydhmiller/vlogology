@@ -1,7 +1,13 @@
-import '../src/styles/styles.scss'
+import '../styles/styles.scss';
+import '../styles/tailwind.css';
 
-function VlogologyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+interface AppProps {
+  Component: any,
+  pageProps: any
 }
 
-export default VlogologyApp
+function VlogologyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
+}
+
+export default VlogologyApp;
