@@ -1,16 +1,9 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
 import Layout from '../src/components/Layout';
 
 export default function Home() {
   return (
-    <Layout title="Title">
+    <Layout title="Learn How To Vlog and Start Vlogging Today (FREE Guide and Lessons">
       <div>
-        <Head>
-          <title>Create Next App</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-
         <main>
           Main page body bru
         </main>
