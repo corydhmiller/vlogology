@@ -1,7 +1,7 @@
-import '../styles/globals.css'
+import '../src/styles/styles.scss'
 
-function MyApp({ Component, pageProps }) {
+function VlogologyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default VlogologyApp
