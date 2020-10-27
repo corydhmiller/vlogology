@@ -70,3 +70,5 @@ yarn-error.log
 
 # Next
 .next
+/next
+/out

@@ -1,14 +1,16 @@
 import React, { FC } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+import LogoImg from '../images/logo.svg';
 
-const Sidebar: FC = () => {
-  const [openMenu, setOpenMenu] = React.useState<string>('');
+const Sidebar = () => {
+  const [openMenu, setOpenMenu] = React.useState('');
 
-  const handleClick = (e: string) => {
+  const handleClick = (e) => {
     setOpenMenu(e);
   };
 
-  const MenuSectionToggle: FC<{ title: string }> = ({ title }) => {
+  const MenuSectionToggle = ({ title }) => {
     return (
       <div
         className="sidebar__section--toggle"
@@ -20,17 +22,14 @@ const Sidebar: FC = () => {
     );
   };
 
-  const MenuSection: FC<{ title: string; children: any }> = ({
-    title,
-    children
-  }) => {
+  const MenuSection = ({ title, children }) => {
     return (
       <>
         <MenuSectionToggle title={title} />
         <div
           data-section={title}
           className={
-            'sidebar__section--content border' +
+            'sidebar__section--content rounded-xl' +
             (openMenu === title ? ' sidebar__section--visible' : '')
           }
         >
@@ -41,7 +40,7 @@ const Sidebar: FC = () => {
   };
 
   return (
-    <aside className="sidebar">
+    <aside className="sidebar border rounded grid sm:flex">
       <div className="sidebar__close">
         <div className="menu__button">
           <div
@@ -56,7 +55,7 @@ const Sidebar: FC = () => {
         <div className="sidebar__logo__image">
           <Link href="/">
             <a>
-              <img src="../images/logo.svg" alt="Vlogology" />
+             <LogoImg />
             </a>
           </Link>
         </div>
