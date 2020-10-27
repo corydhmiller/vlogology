@@ -1,24 +1,11 @@
 $sidebarWidth: 250px;
 
 .sidebar {
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
   width: $sidebarWidth;
   height: 100vh;
-  position: fixed;
-  top: 0;
   left: -$sidebarWidth;
-  background: $lessblack;
-  z-index: 998;
-  color: $white;
 
   @include transition($ease);
-
-  @include screen--l {
-    background: $lessblack;
-    left: 0;
-  }
 
   & li {
     padding-left: 0.5rem;
@@ -72,6 +59,7 @@ $sidebarWidth: 250px;
       overflow: hidden;
     }
     &--visible {
+      height:auto;
       max-height: 300px;
     }
   }

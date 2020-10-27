@@ -11,7 +11,7 @@ const Layout = ({ children, title }) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <Sidebar />
-    <main className="container mx-auto">{children}</main>
+    <main>{children}</main>
   </>
 );
 

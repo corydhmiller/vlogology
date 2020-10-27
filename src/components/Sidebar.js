@@ -6,19 +6,33 @@ import LogoImg from '../images/logo.svg';
 const Sidebar = () => {
   const [openMenu, setOpenMenu] = React.useState('');
 
-  const handleClick = (e) => {
-    setOpenMenu(e);
-  };
-
   const MenuSectionToggle = ({ title }) => {
+    const toggleRef = React.createRef();
+
+    const handleClick = (e) => {
+      // setOpenMenu(e);
+      console.log(toggleRef.current.dataset);
+      // e.classlist.toggle('sidebar__section--visible');
+    };
     return (
       <div
         className="sidebar__section--toggle"
         data-section={title}
-        onClick={() => handleClick(title)}
+        ref={toggleRef}
+        onClick={handleClick}
       >
         {title}
       </div>
+    );
+  };
+
+  const MenuLink = ({ link, children }) => {
+    return (
+      <li className="pl-2 pb-2">
+        <Link href={link} replace>
+          {children}
+        </Link>
+      </li>
     );
   };
 
@@ -28,10 +42,7 @@ const Sidebar = () => {
         <MenuSectionToggle title={title} />
         <div
           data-section={title}
-          className={
-            'sidebar__section--content rounded-xl' +
-            (openMenu === title ? ' sidebar__section--visible' : '')
-          }
+          className="sidebar__section--content transition-all duration-500 ease-in-out"
         >
           {children}
         </div>
@@ -40,7 +51,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="sidebar border rounded grid sm:flex">
+    <aside className="sidebar flex flex-col overflow-y-scroll fixed top-0 bg-black z-50 text-white lg:bg-gray-800 lg:left-0">
       <div className="sidebar__close">
         <div className="menu__button">
           <div
@@ -55,7 +66,7 @@ const Sidebar = () => {
         <div className="sidebar__logo__image">
           <Link href="/">
             <a>
-             <LogoImg />
+              <LogoImg />
             </a>
           </Link>
         </div>
@@ -65,208 +76,138 @@ const Sidebar = () => {
           <div className="sidebar__section">
             <MenuSection title="Start">
               <ul>
-                <li>
-                  <Link href="/start/why-vlog/" replace>
-                    Why vlog?
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/start/the-benefits-of-vlogging/" replace>
-                    The benefits of vlogging
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/start/misconceptions-about-vlogging/" replace>
-                    Misconceptions about vlogging
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/start/make-a-commitment/" replace>
-                    Make a commitment
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/start/the-end-goal/" replace>
-                    The end goal
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/start/if-nothing-else-read-this-tldr/" replace>
-                    If nothing else READ THIS (TL;DR)
-                  </Link>
-                </li>
+                <MenuLink link="/start/why-vlog/">Why vlog?</MenuLink>
+                <MenuLink link="/start/the-benefits-of-vlogging/">
+                  The benefits of vlogging
+                </MenuLink>
+                <MenuLink link="/start/misconceptions-about-vlogging/">
+                  Misconceptions about vlogging
+                </MenuLink>
+                <MenuLink link="/start/make-a-commitment/">
+                  Make a commitment
+                </MenuLink>
+                <MenuLink link="/start/the-end-goal/">The end goal</MenuLink>
+                <MenuLink link="/start/if-nothing-else-read-this-tldr/">
+                  If nothing else READ THIS (TL;DR)
+                </MenuLink>
               </ul>
             </MenuSection>
           </div>
           <div className="sidebar__section">
             <MenuSection title="Story">
               <ul>
-                <li>
-                  <Link href="/story/your-greatest-advantage/" replace>
-                    Your greatest advantage
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/story/im-not-interesting/" replace>
-                    "I'm not interesting"
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/story/telling-your-story/" replace>
-                    Telling your story
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/story/getting-in-front-of-the-camera/" replace>
-                    Getting in front of the camera
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/story/the-rubber-duck-technique/" replace>
-                    The Rubber Duck technique
-                  </Link>
-                </li>
+                <MenuLink link="/story/your-greatest-advantage/">
+                  Your greatest advantage
+                </MenuLink>
+                <MenuLink link="/story/im-not-interesting/">
+                  "I'm not interesting"
+                </MenuLink>
+                <MenuLink link="/story/telling-your-story/">
+                  Telling your story
+                </MenuLink>
+                <MenuLink link="/story/getting-in-front-of-the-camera/">
+                  Getting in front of the camera
+                </MenuLink>
+                <MenuLink link="/story/the-rubber-duck-technique/">
+                  The Rubber Duck technique
+                </MenuLink>
               </ul>
             </MenuSection>
           </div>
           <div className="sidebar__section">
             <MenuSection title="Gear">
               <ul>
-                <li>
-                  <Link href="/gear/the-truth-about-gear/" replace>
-                    The truth about gear
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/gear/the-best-camera-for-vlogging/" replace>
-                    The best camera
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/gear/used-vs-new-gear/" replace>
-                    Used vs. new gear
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/gear/microphones-and-quality-audio/" replace>
-                    Microphones and quality audio
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/gear/cameras-commonly-used-by-vloggers/" replace>
-                    Cameras commonly used by vloggers
-                  </Link>
-                </li>
+                <MenuLink link="/gear/the-truth-about-gear/">
+                  The truth about gear
+                </MenuLink>
+                <MenuLink link="/gear/the-best-camera-for-vlogging/">
+                  The best camera
+                </MenuLink>
+                <MenuLink link="/gear/used-vs-new-gear/">
+                  Used vs. new gear
+                </MenuLink>
+                <MenuLink link="/gear/microphones-and-quality-audio/">
+                  Microphones and quality audio
+                </MenuLink>
+                <MenuLink link="/gear/cameras-commonly-used-by-vloggers">
+                  Cameras commonly used by vloggers
+                </MenuLink>
               </ul>
             </MenuSection>
           </div>
           <div className="sidebar__section">
             <MenuSection title="Recording">
               <ul>
-                <li>
-                  <Link href="/recording/1080-vs-4k-for-vlogging/" replace>
-                    1080 vs. 4K for vlogging
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/recording/getting-the-settings-right/" replace>
-                    Getting the settings right
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/recording/moving-vs-stationary/">
-                    Moving vs. stationary
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/recording/the-best-lighting-is-free/">
-                    The best lighting is free
-                  </Link>
-                </li>
+                <MenuLink link="/recording/1080-vs-4k-for-vlogging/">
+                  1080 vs. 4K for vlogging
+                </MenuLink>
+                <MenuLink link="/recording/getting-the-settings-right/">
+                  Getting the settings right
+                </MenuLink>
+                <MenuLink link="/recording/moving-vs-stationary">
+                  Moving vs. stationary
+                </MenuLink>
+                <MenuLink link="/recording/the-best-lighting-is-free">
+                  The best lighting is free
+                </MenuLink>
               </ul>
             </MenuSection>
           </div>
           <div className="sidebar__section">
             <MenuSection title="Edit">
               <ul>
-                <li>
-                  <Link href="/edit/exploring-your-edit-style/" replace>
-                    Exploring your edit style
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/edit/choosing-your-editing-software/" replace>
-                    Choosing your editing software
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/edit/how-to-edit-your-vlogs-faster/" replace>
-                    How to edit your vlogs faster
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/edit/color-correction-and-grading/" replace>
-                    Color correction and grading
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/edit/hiring-an-editor/" replace>
-                    Hiring an editor
-                  </Link>
-                </li>
+                <MenuLink link="/edit/exploring-your-edit-style/">
+                  Exploring your edit style
+                </MenuLink>
+                <MenuLink link="/edit/choosing-your-editing-software/">
+                  Choosing your editing software
+                </MenuLink>
+                <MenuLink link="/edit/how-to-edit-your-vlogs-faster/">
+                  How to edit your vlogs faster
+                </MenuLink>
+                <MenuLink link="/edit/color-correction-and-grading/">
+                  Color correction and grading
+                </MenuLink>
+                <MenuLink link="/edit/hiring-an-editor/">
+                  Hiring an editor
+                </MenuLink>
               </ul>
             </MenuSection>
           </div>
           <div className="sidebar__section">
             <MenuSection title="Sharing">
               <ul>
-                <li>
-                  <Link href="/sharing/define-a-rhythm/" replace>
-                    Define a rhythm
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/sharing/choose-a-platform/" replace>
-                    Choose a platform
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/sharing/map-out-your-schedule/" replace>
-                    Map out your schedule
-                  </Link>
-                </li>
+                <MenuLink link="/sharing/define-a-rhythm/">
+                  Define a rhythm
+                </MenuLink>
+                <MenuLink link="/sharing/choose-a-platform/">
+                  Choose a platform
+                </MenuLink>
+                <MenuLink link="/sharing/map-out-your-schedule/">
+                  Map out your schedule
+                </MenuLink>
               </ul>
             </MenuSection>
           </div>
           <div className="sidebar__section">
             <MenuSection title="Time">
               <ul>
-                <li>
-                  <Link href="/time/get-overnight-results/" replace>
-                    Get overnight results
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/time/the-fear-of-wasted-time/" replace>
-                    The fear of wasted time
-                  </Link>
-                </li>
+                <MenuLink link="/time/get-overnight-results/">
+                  Get overnight results
+                </MenuLink>
+                <MenuLink link="/time/the-fear-of-wasted-time/">
+                  The fear of wasted time
+                </MenuLink>
               </ul>
             </MenuSection>
           </div>
           <div className="sidebar__section">
             <MenuSection title="Index">
               <ul>
-                <li>
-                  <Link href="/about/" replace>
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/index/recommended-viewing/" replace>
-                    Recommended Viewing
-                  </Link>
-                </li>
+                <MenuLink link="/about/">About</MenuLink>
+                <MenuLink link="/index/recommended-viewing/">
+                  Recommended Viewing
+                </MenuLink>
               </ul>
             </MenuSection>
           </div>
