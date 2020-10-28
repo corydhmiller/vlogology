@@ -5,7 +5,7 @@ module.exports = {
   },
   purge: {
     layers: ['utilities'],
-    content: ['./pages/**/*.js', './components/**/*.js']
+    content: ['./pages/**/*.tsx', './components/**/*.tsx']
   },
   theme: {
     colors: {

@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Link from 'next/link';
 import { CSSTransition } from 'react-transition-group';
 
 import styles from '../../styles/modules/sidebar.module.scss';
 import LogoImg from '../../public/images/logo.svg';
 
-const Sidebar = () => {
+const Sidebar = ({}) => {
   const [openMenu, setOpenMenu] = React.useState('');
 
-  const MenuSection = ({ title, children }) => {
-    const toggleRef = React.createRef();
-
+  // Declare types for the menu section
+  type MenuSectionTypes = {
+    title: string;
+    children: any;
+  };
+  // MenuSection refers to the clickable Title and following list of links
+  const MenuSection = ({ title, children }: MenuSectionTypes) => {
+    // Set up a ref for the toggle div
+    const toggleRef = React.createRef<HTMLDivElement>();
+    // Not sure if this state needs to be here or not
     const [isOpen, setIsOpen] = React.useState(false);
 
-    const handleClick = (e) => {
-      setOpenMenu(e);
+    // Handle the click from the main menu element. This is super WIP
+    const handleClick = (title: string) => {
+      setOpenMenu(title);
       setIsOpen(true);
     };
 
@@ -33,7 +41,11 @@ const Sidebar = () => {
         <CSSTransition in={isOpen} timeout={200} classNames="visible">
           <div
             data-section={title}
-            className={`${styles.content} transition-all duration-500 ease-in-out mb-2${openMenu === title ? " " + styles.visible : "" }`}
+            className={`${
+              styles.content
+            } transition-all duration-500 ease-in-out mb-2${
+              openMenu === title ? ' ' + styles.visible : ''
+            }`}
           >
             {children}
           </div>
@@ -41,8 +53,15 @@ const Sidebar = () => {
       </>
     );
   };
+  // Declare types for the menu links themselves
+  type MenuLink = {
+    link: string;
+    children: any;
+  };
 
-  const MenuLink = ({ link, children }) => {
+  const MenuLink = ({ link, children }: MenuLink) => {
+    // <MenuLink link="URL">CONTENT OF LINK</MenuLink>
+    // May want to make that simpler and instead of using { children }
     return (
       <li className="pl-2 pb-2 leading-tight">
         <Link href={link} replace>

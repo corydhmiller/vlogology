@@ -18,7 +18,12 @@ const PageGrid = styled.div`
   }
 `;
 
-const Layout = ({ children, title }) => (
+type LayoutProps = {
+  children: any,
+  title: string
+};
+
+const Layout = ({ children, title }: LayoutProps) => (
   <>
     <Head>
       <title>{title} - Vlogology</title>
