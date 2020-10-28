@@ -1,34 +1,50 @@
-import React, { FC } from 'react';
+import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
-import LogoImg from '../images/logo.svg';
+import { CSSTransition } from 'react-transition-group';
+
+import styles from '../../styles/modules/sidebar.module.scss';
+import LogoImg from '../../public/images/logo.svg';
 
 const Sidebar = () => {
   const [openMenu, setOpenMenu] = React.useState('');
 
-  const MenuSectionToggle = ({ title }) => {
+  const MenuSection = ({ title, children }) => {
     const toggleRef = React.createRef();
 
+    const [isOpen, setIsOpen] = React.useState(false);
+
     const handleClick = (e) => {
-      // setOpenMenu(e);
-      console.log(toggleRef.current.dataset);
-      // e.classlist.toggle('sidebar__section--visible');
+      setOpenMenu(e);
+      setIsOpen(true);
     };
+
     return (
-      <div
-        className="sidebar__section--toggle"
-        data-section={title}
-        ref={toggleRef}
-        onClick={handleClick}
-      >
-        {title}
-      </div>
+      <>
+        <div
+          className={`${styles.toggle} text-xl font-bold cursor-pointer relative hover:text-black pl-2`}
+          data-section={title}
+          ref={toggleRef}
+          onClick={() => {
+            handleClick(title);
+          }}
+        >
+          {title}
+        </div>
+        <CSSTransition in={isOpen} timeout={200} classNames="visible">
+          <div
+            data-section={title}
+            className={`${styles.content} transition-all duration-500 ease-in-out mb-2${openMenu === title ? " " + styles.visible : "" }`}
+          >
+            {children}
+          </div>
+        </CSSTransition>
+      </>
     );
   };
 
   const MenuLink = ({ link, children }) => {
     return (
-      <li className="pl-2 pb-2">
+      <li className="pl-2 pb-2 leading-tight">
         <Link href={link} replace>
           {children}
         </Link>
@@ -36,24 +52,12 @@ const Sidebar = () => {
     );
   };
 
-  const MenuSection = ({ title, children }) => {
-    return (
-      <>
-        <MenuSectionToggle title={title} />
-        <div
-          data-section={title}
-          className="sidebar__section--content transition-all duration-500 ease-in-out"
-        >
-          {children}
-        </div>
-      </>
-    );
-  };
-
   return (
-    <aside className="sidebar flex flex-col overflow-y-scroll fixed top-0 bg-black z-50 text-white lg:bg-gray-800 lg:left-0">
-      <div className="sidebar__close">
-        <div className="menu__button">
+    <aside
+      className={`${styles.sidebar} flex flex-col overflow-y-scroll top-0 bg-black z-50 text-white lg:bg-gray-800`}
+    >
+      <div className={styles.close}>
+        <div className={styles.menu__button}>
           <div
             className="button button--yellow button--menu button--inline"
             data-action="toggleMenu"
@@ -62,8 +66,8 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="sidebar__logo">
-        <div className="sidebar__logo__image">
+      <div className={styles.logo}>
+        <div className={styles.image}>
           <Link href="/">
             <a>
               <LogoImg />
@@ -72,8 +76,8 @@ const Sidebar = () => {
         </div>
       </div>
       <nav>
-        <div className="sidebar__nav">
-          <div className="sidebar__section">
+        <div className={styles.nav}>
+          <div className={styles.section}>
             <MenuSection title="Start">
               <ul>
                 <MenuLink link="/start/why-vlog/">Why vlog?</MenuLink>
@@ -93,7 +97,7 @@ const Sidebar = () => {
               </ul>
             </MenuSection>
           </div>
-          <div className="sidebar__section">
+          <div className={styles.section}>
             <MenuSection title="Story">
               <ul>
                 <MenuLink link="/story/your-greatest-advantage/">
@@ -114,7 +118,7 @@ const Sidebar = () => {
               </ul>
             </MenuSection>
           </div>
-          <div className="sidebar__section">
+          <div className={styles.section}>
             <MenuSection title="Gear">
               <ul>
                 <MenuLink link="/gear/the-truth-about-gear/">
@@ -135,7 +139,7 @@ const Sidebar = () => {
               </ul>
             </MenuSection>
           </div>
-          <div className="sidebar__section">
+          <div className={styles.section}>
             <MenuSection title="Recording">
               <ul>
                 <MenuLink link="/recording/1080-vs-4k-for-vlogging/">
@@ -153,7 +157,7 @@ const Sidebar = () => {
               </ul>
             </MenuSection>
           </div>
-          <div className="sidebar__section">
+          <div className={styles.section}>
             <MenuSection title="Edit">
               <ul>
                 <MenuLink link="/edit/exploring-your-edit-style/">
@@ -174,7 +178,7 @@ const Sidebar = () => {
               </ul>
             </MenuSection>
           </div>
-          <div className="sidebar__section">
+          <div className={styles.section}>
             <MenuSection title="Sharing">
               <ul>
                 <MenuLink link="/sharing/define-a-rhythm/">
@@ -189,7 +193,7 @@ const Sidebar = () => {
               </ul>
             </MenuSection>
           </div>
-          <div className="sidebar__section">
+          <div className={styles.section}>
             <MenuSection title="Time">
               <ul>
                 <MenuLink link="/time/get-overnight-results/">
@@ -201,7 +205,7 @@ const Sidebar = () => {
               </ul>
             </MenuSection>
           </div>
-          <div className="sidebar__section">
+          <div className={styles.section}>
             <MenuSection title="Index">
               <ul>
                 <MenuLink link="/about/">About</MenuLink>
@@ -216,4 +220,5 @@ const Sidebar = () => {
     </aside>
   );
 };
+
 export default Sidebar;

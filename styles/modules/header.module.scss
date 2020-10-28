@@ -1,0 +1,21 @@
+@import '../modules/units';
+@import '../modules/mixins';
+@import '../modules/colors';
+// Header
+
+.header {
+  padding: 0.55rem 1rem;
+}
+.logo {
+  &__image {
+    width: 7rem;
+  }
+}
+
+// Page headers
+
+.page-header {
+  margin: 40px 0;
+  font-size: 2rem;
+  border-bottom: 22px solid $yellow;
+}

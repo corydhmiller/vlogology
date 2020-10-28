@@ -1,0 +1,111 @@
+@import '../modules/units';
+@import '../modules/mixins';
+@import '../modules/colors';
+
+$sidebarWidth: 250px;
+
+.sidebar {
+  // width: $sidebarWidth;
+
+  &_visible {
+    left: 0;
+  }
+  & li {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  justify-content: center;
+  display: none;
+  margin-top: 1rem;
+
+  @include screen--l {
+    display: flex;
+  }
+}
+.image {
+  width: 7rem;
+}
+
+.nav {
+  margin: 1rem 0.75rem 0;
+  border-top: 1px solid $grey;
+
+  & a {
+    font-weight: 400;
+    color: $white;
+  }
+
+  & a:hover {
+    background: $lightgrey;
+  }
+
+  & a:after {
+    display: none;
+  }
+}
+
+.close {
+  margin: 1rem 0.75rem 0;
+
+  @include screen--l {
+    display: none;
+  }
+}
+
+.footer {
+  display: flex;
+  margin-top: auto;
+  padding: 1rem 0;
+  background: $grey;
+
+  &_section {
+    flex-grow: 1;
+    text-align: center;
+
+    &:first-child {
+      border-right: 1px solid $grey;
+    }
+  }
+}
+
+.content {
+  max-height: 0px;
+  transition: all 0.35s ease;
+  overflow: hidden;
+}
+.visible {
+  height: auto;
+  max-height: 300px;
+}
+.toggle {
+  @include transition($fast);
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    left: 0;
+    background: $yellow;
+
+    @include transition($ease);
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.section {
+  margin: 1rem 0;
+}
+.current-page {
+  background: $lightgrey;
+}

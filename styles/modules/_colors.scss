@@ -13,16 +13,3 @@ $red: #d5443c;
 $darkred: darken($red, 10%);
 $green: #5dd961;
 $blue: #5bcaeb;
-
-.yellow {
-	color: $yellow;
-}
-
-.bg {
-	&--yellow {
-		background: $yellow;
-	}
-  &--black {
-    background: $black;
-  }
-}
