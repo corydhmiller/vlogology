@@ -28,16 +28,26 @@
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^3.0.0",
     "@svgr/webpack": "^5.4.0",
-    "@types/node": "^14.14.3",
+    "@types/node": "^14.14.5",
     "@types/react-transition-group": "^4.4.0",
     "@types/styled-components": "^5.1.4",
+    "@typescript-eslint/eslint-plugin": "^4.6.0",
+    "@typescript-eslint/parser": "^4.6.0",
     "@zeit/next-css": "^1.0.1",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jam3": "^0.2.3",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
     "next-purgecss": "^4.0.0",
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-import": "^13.0.0",
     "postcss-preset-env": "^6.7.0",
     "styled-components": "^5.2.0",
     "tailwindcss": "^1.9.6",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.5"
   }
 }
