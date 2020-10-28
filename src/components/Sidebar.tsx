@@ -1,14 +1,12 @@
+/* eslint-disable no-console */
 /* eslint-disable no-use-before-define */
 import React from 'react';
 import Link from 'next/link';
-import { CSSTransition } from 'react-transition-group';
 
 import styles from '../../styles/modules/sidebar.module.scss';
 import LogoImg from '../../public/images/logo.svg';
 
 const Sidebar: React.FunctionComponent<null> = () => {
-  const [openMenu, setOpenMenu] = React.useState('');
-
   // Declare types for the menu section
   type MenuSectionTypes = {
     title: string;
@@ -18,33 +16,40 @@ const Sidebar: React.FunctionComponent<null> = () => {
   const MenuSection = ({ title, children }: MenuSectionTypes) => {
     // Set up a ref for the toggle div
     const toggleRef = React.createRef<HTMLDivElement>();
+    const contentRef = React.createRef<HTMLDivElement>();
     // Not sure if this state needs to be here or not
-    const [isOpen, setIsOpen] = React.useState(false);
+    const [setActive, setIsActive] = React.useState('');
 
     // Handle the click from the main menu element. This is super WIP
+    const toggleActive = () => {
+      setIsActive(setActive === '' ? 'active' : '');
+    };
+    const handleKeyUp = (e: React.KeyboardEvent) => {
+      console.log(`did keyup with ${e}`);
+      // if(e.key )
+    };
 
     return (
-      <>
+      <div className={`menu_section ${setActive}`}>
         <div
           className={`${styles.toggle} text-xl font-bold cursor-pointer relative hover:text-black pl-2`}
           data-section={title}
           ref={toggleRef}
+          onClick={toggleActive}
+          onKeyUp={handleKeyUp}
+          role="menuitem"
+          tabIndex={0}
         >
           {title}
         </div>
-        <CSSTransition in={isOpen} timeout={200} classNames="visible">
-          <div
-            data-section={title}
-            className={`${
-              styles.content
-            } transition-all duration-500 ease-in-out mb-2${
-              openMenu === title ? ` ${styles.visible}` : ''
-            }`}
-          >
-            {children}
-          </div>
-        </CSSTransition>
-      </>
+        <div
+          data-section={title}
+          ref={contentRef}
+          className={`${styles.content} transition-all duration-500 ease-in-out mb-2`}
+        >
+          {children}
+        </div>
+      </div>
     );
   };
 

@@ -6,10 +6,12 @@ const Main = styled.main`
 `;
 
 type PageProps = {
-  children: any;
+  children: React.ReactNode;
 };
 
-const PageWrapper = ({ children }: PageProps) => {
+const PageWrapper: React.FunctionComponent<null> = ({
+  children
+}: PageProps) => {
   return <Main className="relative">{children}</Main>;
 };
 

@@ -6,7 +6,9 @@ import LogoImg from '../../public/images/logo.svg';
 
 const Header = () => {
   return (
-    <header className={(styles.header) + ` bg-black flex items-center w-full lg:hidden fixed top-0 left-0 z-40`}>
+    <header
+      className={`${styles.header} bg-black flex items-center w-full lg:hidden fixed top-0 left-0 z-40`}
+    >
       <div className="header__menu">
         <div className="menu__button">
           <div
@@ -17,10 +19,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <div className={(styles.logo) + ` ml-auto`}>
+      <div className={`${styles.logo} ml-auto`}>
         <div className={styles.logo__image}>
           <Link href="/">
-            <a>
+            <a href="/">
               <LogoImg />
             </a>
           </Link>

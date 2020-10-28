@@ -1,10 +1,10 @@
 import * as React from 'react';
 import Head from 'next/head';
+import styled from 'styled-components';
 
 import Header from './Header';
 import Sidebar from './Sidebar';
 import PageWrapper from './PageWrapper';
-import styled from 'styled-components';
 
 const PageGrid = styled.div`
   grid-template-columns: 250px 1fr;
@@ -19,11 +19,14 @@ const PageGrid = styled.div`
 `;
 
 type LayoutProps = {
-  children: any,
-  title: string
+  title: string;
+  children: React.ReactNode;
 };
 
-const Layout = ({ children, title }: LayoutProps) => (
+const Layout: React.FunctionComponent<null> = ({
+  title,
+  children
+}: LayoutProps) => (
   <>
     <Head>
       <title>{title} - Vlogology</title>

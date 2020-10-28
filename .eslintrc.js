@@ -25,6 +25,11 @@ module.exports = {
     'prettier/react'
   ],
   rules: {
+    // note you must disable the base rule as it can report incorrect errors
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
+    // disable the rule for all files
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
     'import/extensions': 0,
     'react/prop-types': 0,
