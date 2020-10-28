@@ -1,17 +1,18 @@
-import React, { FC } from 'react';
+/* eslint-disable no-use-before-define */
+import React from 'react';
 import Link from 'next/link';
 import { CSSTransition } from 'react-transition-group';
 
 import styles from '../../styles/modules/sidebar.module.scss';
 import LogoImg from '../../public/images/logo.svg';
 
-const Sidebar = ({}) => {
+const Sidebar: React.FunctionComponent<null> = () => {
   const [openMenu, setOpenMenu] = React.useState('');
 
   // Declare types for the menu section
   type MenuSectionTypes = {
     title: string;
-    children: any;
+    children: React.ReactNode;
   };
   // MenuSection refers to the clickable Title and following list of links
   const MenuSection = ({ title, children }: MenuSectionTypes) => {
@@ -21,10 +22,6 @@ const Sidebar = ({}) => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     // Handle the click from the main menu element. This is super WIP
-    const handleClick = (title: string) => {
-      setOpenMenu(title);
-      setIsOpen(true);
-    };
 
     return (
       <>
@@ -32,9 +29,6 @@ const Sidebar = ({}) => {
           className={`${styles.toggle} text-xl font-bold cursor-pointer relative hover:text-black pl-2`}
           data-section={title}
           ref={toggleRef}
-          onClick={() => {
-            handleClick(title);
-          }}
         >
           {title}
         </div>
@@ -44,7 +38,7 @@ const Sidebar = ({}) => {
             className={`${
               styles.content
             } transition-all duration-500 ease-in-out mb-2${
-              openMenu === title ? ' ' + styles.visible : ''
+              openMenu === title ? ` ${styles.visible}` : ''
             }`}
           >
             {children}
@@ -53,13 +47,14 @@ const Sidebar = ({}) => {
       </>
     );
   };
+
   // Declare types for the menu links themselves
-  type MenuLink = {
+  type MenuLinkTypes = {
     link: string;
-    children: any;
+    children: React.ReactNode;
   };
 
-  const MenuLink = ({ link, children }: MenuLink) => {
+  const MenuLink = ({ link, children }: MenuLinkTypes) => {
     // <MenuLink link="URL">CONTENT OF LINK</MenuLink>
     // May want to make that simpler and instead of using { children }
     return (
@@ -88,7 +83,7 @@ const Sidebar = ({}) => {
       <div className={styles.logo}>
         <div className={styles.image}>
           <Link href="/">
-            <a>
+            <a href="/">
               <LogoImg />
             </a>
           </Link>
@@ -111,7 +106,7 @@ const Sidebar = ({}) => {
                 </MenuLink>
                 <MenuLink link="/start/the-end-goal/">The end goal</MenuLink>
                 <MenuLink link="/start/if-nothing-else-read-this-tldr/">
-                  If nothing else READ THIS (TL;DR)
+                  If nothing else READ THIS (TL; DR)
                 </MenuLink>
               </ul>
             </MenuSection>
@@ -123,7 +118,7 @@ const Sidebar = ({}) => {
                   Your greatest advantage
                 </MenuLink>
                 <MenuLink link="/story/im-not-interesting/">
-                  "I'm not interesting"
+                  &quot;I&apos;m not interesting&quot;
                 </MenuLink>
                 <MenuLink link="/story/telling-your-story/">
                   Telling your story
@@ -146,9 +141,7 @@ const Sidebar = ({}) => {
                 <MenuLink link="/gear/the-best-camera-for-vlogging/">
                   The best camera
                 </MenuLink>
-                <MenuLink link="/gear/used-vs-new-gear/">
-                  Used vs. new gear
-                </MenuLink>
+                <MenuLink link="/gear/used-vs-new-gear/">vs.new gear</MenuLink>
                 <MenuLink link="/gear/microphones-and-quality-audio/">
                   Microphones and quality audio
                 </MenuLink>
@@ -162,13 +155,13 @@ const Sidebar = ({}) => {
             <MenuSection title="Recording">
               <ul>
                 <MenuLink link="/recording/1080-vs-4k-for-vlogging/">
-                  1080 vs. 4K for vlogging
+                  1080 vs.4K for vlogging
                 </MenuLink>
                 <MenuLink link="/recording/getting-the-settings-right/">
                   Getting the settings right
                 </MenuLink>
                 <MenuLink link="/recording/moving-vs-stationary">
-                  Moving vs. stationary
+                  Moving vs.stationary
                 </MenuLink>
                 <MenuLink link="/recording/the-best-lighting-is-free">
                   The best lighting is free
