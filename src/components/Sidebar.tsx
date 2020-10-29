@@ -1,28 +1,24 @@
 /* eslint-disable no-console */
 /* eslint-disable no-use-before-define */
-import React from 'react';
+import React, { BaseSyntheticEvent, useState } from 'react';
 import Link from 'next/link';
 
 import styles from '../../styles/modules/sidebar.module.scss';
 import LogoImg from '../../public/images/logo.svg';
 
-const Sidebar: React.FunctionComponent<null> = () => {
+const Sidebar = () => {
   // Declare types for the menu section
   type MenuSectionTypes = {
     title: string;
     children: React.ReactNode;
   };
+  const [setActive, setActiveState] = useState('');
+
   // MenuSection refers to the clickable Title and following list of links
   const MenuSection = ({ title, children }: MenuSectionTypes) => {
-    // Set up a ref for the toggle div
-    const toggleRef = React.createRef<HTMLDivElement>();
-    const contentRef = React.createRef<HTMLDivElement>();
-    // Not sure if this state needs to be here or not
-    const [setActive, setIsActive] = React.useState('');
-
     // Handle the click from the main menu element. This is super WIP
-    const toggleActive = () => {
-      setIsActive(setActive === '' ? 'active' : '');
+    const toggleActive = (e: BaseSyntheticEvent) => {
+      setActiveState(e.target.dataset.section);
     };
     const handleKeyUp = (e: React.KeyboardEvent) => {
       console.log(`did keyup with ${e}`);
@@ -30,11 +26,10 @@ const Sidebar: React.FunctionComponent<null> = () => {
     };
 
     return (
-      <div className={`menu_section ${setActive}`}>
+      <div className="menu_section">
         <div
           className={`${styles.toggle} text-xl font-bold cursor-pointer relative hover:text-black pl-2`}
           data-section={title}
-          ref={toggleRef}
           onClick={toggleActive}
           onKeyUp={handleKeyUp}
           role="menuitem"
@@ -44,8 +39,11 @@ const Sidebar: React.FunctionComponent<null> = () => {
         </div>
         <div
           data-section={title}
-          ref={contentRef}
-          className={`${styles.content} transition-all duration-500 ease-in-out mb-2`}
+          className={`${
+            styles.content
+          } transition-all duration-500 ease-in-out mb-2 ${
+            setActive === title ? styles.visible : 'no'
+          }`}
         >
           {children}
         </div>

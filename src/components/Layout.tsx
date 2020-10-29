@@ -1,32 +1,17 @@
 import * as React from 'react';
 import Head from 'next/head';
-import styled from 'styled-components';
+import styles from '../../styles/modules/layout.module.scss';
 
 import Header from './Header';
 import Sidebar from './Sidebar';
 import PageWrapper from './PageWrapper';
-
-const PageGrid = styled.div`
-  grid-template-columns: 250px 1fr;
-  @media screen and (max-width: 1024px) {
-    grid-template-columns: 0 1fr;
-  }
-  &.expand {
-    @media screen and (max-width: 1024px) {
-      grid-template-columns: 250px 1fr;
-    }
-  }
-`;
 
 type LayoutProps = {
   title: string;
   children: React.ReactNode;
 };
 
-const Layout: React.FunctionComponent<null> = ({
-  title,
-  children
-}: LayoutProps) => (
+const Layout = ({ title, children }: LayoutProps) => (
   <>
     <Head>
       <title>{title} - Vlogology</title>
@@ -34,11 +19,11 @@ const Layout: React.FunctionComponent<null> = ({
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <Header />
-    <PageGrid className="grid">
+    <div className={`grid ${styles.layout_grid}`}>
       <Sidebar />
 
       <PageWrapper>{children}</PageWrapper>
-    </PageGrid>
+    </div>
   </>
 );
 

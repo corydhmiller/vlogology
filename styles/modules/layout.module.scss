@@ -1,0 +1,11 @@
+.layout_grid {
+  grid-template-columns: 250px 1fr;
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 0 1fr;
+  }
+}
+.expand {
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 250px 1fr;
+  }
+}
