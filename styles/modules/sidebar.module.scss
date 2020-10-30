@@ -96,7 +96,8 @@ $sidebarWidth: 250px;
     @include transition($ease);
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     &:after {
       width: 100%;
     }
