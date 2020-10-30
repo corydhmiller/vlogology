@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 /* eslint-disable no-use-before-define */
-import React, { useState } from 'react';
+import * as React from 'react';
 import Link from 'next/link';
 
 import styles from '../../styles/modules/sidebar.module.scss';
@@ -10,7 +10,7 @@ import MenuLink from './Sidebar/MenuLink';
 import MenuSection from './Sidebar/MenuSection';
 
 const Sidebar = () => {
-  const [activeMenu, setActiveMenu] = useState('');
+  const [activeMenu, setActiveMenu] = React.useState('');
 
   return (
     <aside

@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import styles from '../../../styles/modules/sidebar.module.scss';
 // Declare types for the menu section
 type MenuSectionTypes = {
