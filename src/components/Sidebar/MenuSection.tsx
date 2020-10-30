@@ -27,7 +27,7 @@ const MenuSection = ({
         className={`${
           styles.toggle
         } text-xl font-bold cursor-pointer relative hover:text-black pl-2${
-          menu === title ? ' text-black' : ''
+          menu === title ? ` text-black ${styles.toggle_selected}` : ''
         }`}
         data-section={title}
         onClick={handleSectionClick}

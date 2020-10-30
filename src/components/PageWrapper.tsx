@@ -1,16 +1,17 @@
 import * as React from 'react';
-import styled from 'styled-components';
 
-const Main = styled.main`
-  top: 64px;
-`;
+import styles from '../../styles/modules/page_wrapper.module.scss';
 
 type PageProps = {
   children: React.ReactNode;
 };
 
 const PageWrapper = ({ children }: PageProps) => {
-  return <Main>{children}</Main>;
+  return (
+    <main id="content" className={styles.content}>
+      {children}
+    </main>
+  );
 };
 
 export default PageWrapper;
