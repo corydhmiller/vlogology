@@ -5,7 +5,7 @@ const WhyVlog: React.FunctionComponent<null> = () => {
   return (
     <Layout title="Why vlog, you nugget?">
       <div>
-        <main className="grid">Ya wee betch</main>
+        <main className="grid">404 Ya wee betch</main>
       </div>
     </Layout>
   );

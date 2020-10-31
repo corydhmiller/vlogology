@@ -57,7 +57,7 @@ const MenuSection = ({
           isMenuSelected() ? styles.visible : ''
         }`}
       >
-        {children}
+        <ul className="pl-2 pr-2">{children}</ul>
       </div>
     </div>
   );
