@@ -33,15 +33,6 @@ $sidebarWidth: 250px;
 .nav {
   border-top: 1px solid $grey;
 
-  & a {
-    font-weight: 400;
-    color: $white;
-  }
-
-  & a:hover {
-    background: $lightgrey;
-  }
-
   & a:after {
     display: none;
   }
@@ -106,7 +97,4 @@ $sidebarWidth: 250px;
 
 .section {
   margin: 1rem 0;
-}
-.current-page {
-  background: $lightgrey;
 }

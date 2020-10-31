@@ -44,22 +44,22 @@ const Sidebar = () => {
             setActiveMenu={setActiveMenu}
           >
             <ul>
-              <MenuLink link="/start/why-vlog/" content="Why vlog?" />
+              <MenuLink link="/start/why-vlog" content="Why vlog?" />
               <MenuLink
-                link="/start/the-benefits-of-vlogging/"
+                link="/start/the-benefits-of-vlogging"
                 content="The benefits of vlogging"
               />
               <MenuLink
-                link="/start/misconceptions-about-vlogging/"
+                link="/start/misconceptions-about-vlogging"
                 content="Misconceptions about vlogging"
               />
               <MenuLink
-                link="/start/make-a-commitment/"
+                link="/start/make-a-commitment"
                 content="Make a commitment"
               />
-              <MenuLink link="/start/the-end-goal/" content="The end goal" />
+              <MenuLink link="/start/the-end-goal" content="The end goal" />
               <MenuLink
-                link="/start/if-nothing-else-read-this-tldr/"
+                link="/start/if-nothing-else-read-this-tldr"
                 content="If nothing else READ THIS (TL; DR)"
               />
             </ul>
@@ -72,23 +72,23 @@ const Sidebar = () => {
           >
             <ul>
               <MenuLink
-                link="/story/your-greatest-advantage/"
+                link="/story/your-greatest-advantage"
                 content="Your greatest advantage"
               />
               <MenuLink
-                link="/story/im-not-interesting/"
+                link="/story/im-not-interesting"
                 content='"I&apos;m not interesting"'
               />
               <MenuLink
-                link="/story/telling-your-story/"
+                link="/story/telling-your-story"
                 content="Telling your story"
               />
               <MenuLink
-                link="/story/getting-in-front-of-the-camera/"
+                link="/story/getting-in-front-of-the-camera"
                 content="Getting in front of the camera"
               />
               <MenuLink
-                link="/story/the-rubber-duck-technique/"
+                link="/story/the-rubber-duck-technique"
                 content="The Rubber Duck technique"
               />
             </ul>
@@ -101,16 +101,16 @@ const Sidebar = () => {
           >
             <ul>
               <MenuLink
-                link="/gear/the-truth-about-gear/"
+                link="/gear/the-truth-about-gear"
                 content="The truth about gear"
               />
               <MenuLink
-                link="/gear/the-best-camera-for-vlogging/"
+                link="/gear/the-best-camera-for-vlogging"
                 content="The best camera"
               />
-              <MenuLink link="/gear/used-vs-new-gear/" content="vs.new gear" />
+              <MenuLink link="/gear/used-vs-new-gear" content="vs.new gear" />
               <MenuLink
-                link="/gear/microphones-and-quality-audio/"
+                link="/gear/microphones-and-quality-audio"
                 content="Microphones and quality audio"
               />
               <MenuLink
@@ -127,11 +127,11 @@ const Sidebar = () => {
           >
             <ul>
               <MenuLink
-                link="/recording/1080-vs-4k-for-vlogging/"
+                link="/recording/1080-vs-4k-for-vlogging"
                 content="1080 vs.4K for vlogging"
               />
               <MenuLink
-                link="/recording/getting-the-settings-right/"
+                link="/recording/getting-the-settings-right"
                 content="Getting the settings right"
               />
               <MenuLink
@@ -152,23 +152,23 @@ const Sidebar = () => {
           >
             <ul>
               <MenuLink
-                link="/edit/exploring-your-edit-style/"
+                link="/edit/exploring-your-edit-style"
                 content="Exploring your edit style"
               />
               <MenuLink
-                link="/edit/choosing-your-editing-software/"
+                link="/edit/choosing-your-editing-software"
                 content="Choosing your editing software"
               />
               <MenuLink
-                link="/edit/how-to-edit-your-vlogs-faster/"
+                link="/edit/how-to-edit-your-vlogs-faster"
                 content="How to edit your vlogs faster"
               />
               <MenuLink
-                link="/edit/color-correction-and-grading/"
+                link="/edit/color-correction-and-grading"
                 content="Color correction and grading"
               />
               <MenuLink
-                link="/edit/hiring-an-editor/"
+                link="/edit/hiring-an-editor"
                 content="Hiring an editor"
               />
             </ul>
@@ -181,15 +181,15 @@ const Sidebar = () => {
           >
             <ul>
               <MenuLink
-                link="/sharing/define-a-rhythm/"
+                link="/sharing/define-a-rhythm"
                 content="Define a rhythm"
               />
               <MenuLink
-                link="/sharing/choose-a-platform/"
+                link="/sharing/choose-a-platform"
                 content="Choose a platform"
               />
               <MenuLink
-                link="/sharing/map-out-your-schedule/"
+                link="/sharing/map-out-your-schedule"
                 content="Map out your schedule"
               />
             </ul>
@@ -202,11 +202,11 @@ const Sidebar = () => {
           >
             <ul>
               <MenuLink
-                link="/time/get-overnight-results/"
+                link="/time/get-overnight-results"
                 content="Get overnight results"
               />
               <MenuLink
-                link="/time/the-fear-of-wasted-time/"
+                link="/time/the-fear-of-wasted-time"
                 content="The fear of wasted time"
               />
             </ul>
@@ -218,9 +218,9 @@ const Sidebar = () => {
             setActiveMenu={setActiveMenu}
           >
             <ul>
-              <MenuLink link="/about/" content="About" />
+              <MenuLink link="/about" content="About" />
               <MenuLink
-                link="/index/recommended-viewing/"
+                link="/index/recommended-viewing"
                 content="Recommended Viewing"
               />
             </ul>

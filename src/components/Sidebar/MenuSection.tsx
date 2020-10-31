@@ -1,5 +1,7 @@
 import * as React from 'react';
+import { useRouter } from 'next/router';
 import styles from '../../../styles/modules/sidebar.module.scss';
+
 // Declare types for the menu section
 type MenuSectionTypes = {
   title: string;
@@ -16,10 +18,20 @@ const MenuSection = ({
 }: MenuSectionTypes) => {
   // Handle the click from the main menu element. This is super WIP
 
+  const router = useRouter();
+
   const handleSectionClick = () => {
     setActiveMenu(title);
   };
-  const handleKeyUp = () => {};
+  const handleKeyUp = () => {
+    return true;
+  };
+
+  // Get first section of the route path, i.e. /start/why-vlog gives out start
+  const routePath = () => router.route.toLowerCase().split('/')[1];
+
+  const isMenuSelected = () =>
+    menu === title || routePath() === title.toLowerCase();
 
   return (
     <div className={`${styles.section} menu_section`}>
@@ -27,7 +39,7 @@ const MenuSection = ({
         className={`${
           styles.toggle
         } text-xl font-bold cursor-pointer relative hover:text-black pl-2${
-          menu === title ? ` text-black ${styles.toggle_selected}` : ''
+          isMenuSelected() ? ` text-black ${styles.toggle_selected}` : ''
         }`}
         data-section={title}
         onClick={handleSectionClick}
@@ -42,7 +54,7 @@ const MenuSection = ({
         className={`${
           styles.content
         } transition-all duration-1000 ease-in-out mb-2 pt-2 ${
-          menu === title ? styles.visible : ''
+          isMenuSelected() ? styles.visible : ''
         }`}
       >
         {children}
