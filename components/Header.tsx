@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Link from 'next/link';
 
-import styles from '../../styles/modules/header.module.scss';
-import LogoImg from '../../public/images/logo.svg';
+import styles from '../styles/modules/header.module.scss';
+import LogoImg from '../public/images/logo.svg';
 
 const Header = () => {
   return (

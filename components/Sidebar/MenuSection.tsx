@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useRouter } from 'next/router';
-import styles from '../styles/modules/sidebar.module.scss';
+import styles from '../../styles/modules/sidebar.module.scss';
 
 // Declare types for the menu section
 type MenuSectionTypes = {

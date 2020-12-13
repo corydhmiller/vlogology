@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from '../../../styles/modules/menulink.module.scss';
+import styles from '../../styles/modules/menulink.module.scss';
 
 // Declare types for the menu links themselves
 type MenuLinkTypes = {
