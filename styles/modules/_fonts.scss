@@ -1,4 +1,46 @@
+@font-face {
+  font-family: 'Lora';
+  src: url('../../public/font/Lora/Lora-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('../../public/font/Lora/Lora-Semibold.ttf');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('../../public/font/Lora/Lora-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Lora:400,600');
-$sans: "Source Sans Pro", sans-serif;
-$serif: "Lora", serif;
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../public/font/SourceSansPro/SourceSansPro-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../public/font/SourceSansPro/SourceSansPro-Semibold.ttf');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../public/font/SourceSansPro/SourceSansPro-Bold.ttf');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+$sans: 'Source Sans Pro', sans-serif;
+$serif: 'Lora', serif;

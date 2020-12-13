@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
+    "dev": "yarn css && next",
+    "build": "yarn css:prod && next build",
     "start": "next start",
     "tailwind": "yarn tailwind:normalize && yarn tailwind:css",
     "tailwind:normalize": "tailwind build styles/normalize.src.css -c tailwind.config.js -o styles/normalize.css",
