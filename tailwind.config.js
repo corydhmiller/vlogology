@@ -3,10 +3,7 @@ module.exports = {
     // removeDeprecatedGapUtilities: true,
     // purgeLayersByDefault: true,
   },
-  purge: {
-    layers: ['utilities'],
-    content: ['./pages/**/*.tsx', './components/**/*.tsx']
-  },
+  purge: false,
   theme: {
     colors: {
       transparent: 'transparent',

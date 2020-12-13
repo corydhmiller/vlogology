@@ -59,3 +59,6 @@ yarn-error.log
 .next
 /next
 /out
+
+# Tailwind
+styles/tailwind.css

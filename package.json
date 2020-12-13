@@ -9,32 +9,37 @@
     "tailwind": "yarn tailwind:normalize && yarn tailwind:css",
     "tailwind:normalize": "tailwind build styles/normalize.src.css -c tailwind.config.js -o styles/normalize.css",
     "tailwind:css": "tailwind build styles/tailwind.src.css -c tailwind.config.js -o styles/tailwind.css",
-    "css": "npm run tailwind && npm run postcss",
-    "postcss": "postcss -c postcss.config.js -o src"
+    "css": "yarn tailwind",
+    "css:prod": "yarn css && cross-env NODE_ENV=production postcss ./styles/tailwind.css -o ./styles/tailwind.css"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "@types/next": "^9.0.0",
     "@types/react": "^16.9.53",
     "@zeit/next-sass": "^1.0.1",
     "@zeit/next-typescript": "^1.1.1",
-    "autoprefixer": "^10.0.1",
+    "autoprefixer": "^10.1.0",
+    "cssnano": "^4.1.10",
     "next": "^10.0.0",
+    "postcss": "^8.2.1",
+    "postcss-cli": "^8.3.1",
     "prettier": "^2.1.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-transition-group": "^4.4.1",
     "sass": "^1.27.0",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^3.0.0",
     "@svgr/webpack": "^5.4.0",
     "@types/node": "^14.14.5",
-    "@types/styled-components": "^5.1.4",
     "@types/react-transition-group": "^4.4.0",
+    "@types/styled-components": "^5.1.4",
     "@typescript-eslint/eslint-plugin": "^4.6.0",
     "@typescript-eslint/parser": "^4.6.0",
     "@zeit/next-css": "^1.0.1",
+    "cross-env": "^7.0.3",
     "eslint": "^7.12.1",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.15.0",
@@ -47,7 +52,6 @@
     "postcss-flexbugs-fixes": "^4.2.1",
     "postcss-import": "^13.0.0",
     "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.9.6",
     "typescript": "^4.0.5"
   }
 }
