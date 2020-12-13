@@ -6,9 +6,9 @@ const Home: React.FunctionComponent<null> = () => {
     <Layout title="Learn How To Vlog and Start Vlogging Today (FREE Guide and Lessons">
       <>
         <div className="homepage-hero">
-          <div className="grid grid-cols-2">
-            <div className="col-xs-12 col-md-5">
-              <div className="serif hero-left hero-yellow p-12">
+          <div className="grid md:grid-cols-2">
+            <div className="">
+              <div className="p-12 serif hero-left hero-yellow">
                 <div className="block block-copy">
                   <h2 className="big-header">“vlog”</h2>
                   <p className="subtitle">1. noun</p>
@@ -21,7 +21,7 @@ const Home: React.FunctionComponent<null> = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xs-12 col-md-7 p-12">
+            <div className="p-12">
               <div className="flex-container flex-center">
                 <div className="block block-copy">
                   <h2>So you want to start a vlog.</h2>
@@ -61,7 +61,7 @@ const Home: React.FunctionComponent<null> = () => {
         </div>
         <div className="row--dark">
           <div className="row">
-            <div className="col-xs-12 p-12">
+            <div className="p-12 col-xs-12">
               <div className="flex-container flex-center">
                 <div className="media">
                   <div className="media__video shadow--yellow">
@@ -82,7 +82,7 @@ const Home: React.FunctionComponent<null> = () => {
           <div className="row">
             <div className="col-xs-12">
               <div className="flex-container flex-center">
-                <div className="block block-copy mb-12">
+                <div className="block mb-12 block-copy">
                   <div className="text-center">
                     <a href="/start/why-vlog/">
                       <button type="button" className="button button--yellow">
@@ -171,7 +171,7 @@ const Home: React.FunctionComponent<null> = () => {
 
         <div className="row center-xs">
           <div className="col-xs-12 col-sm-8 col-md-6">
-            <div className="flex-container flex-center mt-12">
+            <div className="mt-12 flex-container flex-center">
               <div className="block">
                 <div className="massive font--bold">
                   Vlogs are
@@ -196,11 +196,11 @@ const Home: React.FunctionComponent<null> = () => {
           </div>
         </div>
         <div className="row end-xs">
-          <div className="endbar endbar-right mb-12" />
+          <div className="mb-12 endbar endbar-right" />
         </div>
 
         <div className="row">
-          <div className="col-xs-12 p-12">
+          <div className="p-12 col-xs-12">
             <div className="flex-container flex-center">
               <div className="block block-copy">
                 <p>
@@ -255,12 +255,12 @@ const Home: React.FunctionComponent<null> = () => {
             data-animation="flyin"
           >
             <div
-              className="animate__content pt-4 pb-8 flex-container flex-center animate__flyin animate__flyin--right animate__flyin--complete"
+              className="pt-4 pb-8 animate__content flex-container flex-center animate__flyin animate__flyin--right animate__flyin--complete"
               data-animation="flyin"
               data-delay="50"
             >
               <div className="col-xs-12 col-sm-8">
-                <div className="flex-container flex-center my-12">
+                <div className="my-12 flex-container flex-center">
                   <div className="block pt-4 pb-8">
                     <div className="text-center massive font--bold">
                       Vlogging doesn’t have to be{' '}
@@ -279,7 +279,7 @@ const Home: React.FunctionComponent<null> = () => {
         </div>
 
         <div className="row">
-          <div className="col-xs-12 p-12">
+          <div className="p-12 col-xs-12">
             <div className="flex-container flex-center">
               <div className="block block-copy">
                 <h2>Start Vlogging Without the Headaches</h2>
@@ -357,7 +357,7 @@ const Home: React.FunctionComponent<null> = () => {
         </div>
         <div className="row--dark">
           <div className="row">
-            <div className="col-xs-12 mt-8">
+            <div className="mt-8 col-xs-12">
               <div className="flex-container flex-center">
                 <div className="block block-copy">
                   <h2>
