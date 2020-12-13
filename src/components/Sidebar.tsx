@@ -10,18 +10,29 @@ import MenuLink from './Sidebar/MenuLink';
 import MenuSection from './Sidebar/MenuSection';
 
 const Sidebar = () => {
-  const [activeMenu, setActiveMenu] = React.useState('');
+  const [activeMenu, setActiveMenu] = React.useState();
+
+  const [sidebarIsOpen, setSidebarOpen] = React.useState(false);
+
+  const toggleSidebarOpen = () => {
+    setSidebarOpen(!sidebarIsOpen);
+  };
 
   return (
     <aside
       id="sidebar"
-      className={`${styles.sidebar} flex flex-col bg-gray-800 z-50 text-white fixed overflow-y-scroll top-0 h-screen`}
+      className={`${
+        styles.sidebar
+      } flex flex-col bg-gray-800 z-50 text-white fixed overflow-y-scroll top-0 h-screen ${
+        sidebarIsOpen ? 'sidebar_open' : ''
+      }`}
     >
       <div className={styles.close}>
         <div className={styles.menu__button}>
           <div
             className="button button--yellow button--menu button--inline"
             data-action="toggleMenu"
+            onClick={toggleSidebarOpen}
           >
             Close
           </div>
@@ -40,7 +51,7 @@ const Sidebar = () => {
         <div className={`${styles.nav} mt-4`}>
           <MenuSection
             title="Start"
-            menu={activeMenu}
+            activeMenu={activeMenu}
             setActiveMenu={setActiveMenu}
           >
             <MenuLink link="/start/why-vlog" content="Why vlog?" />
@@ -65,7 +76,7 @@ const Sidebar = () => {
 
           <MenuSection
             title="Story"
-            menu={activeMenu}
+            activeMenu={activeMenu}
             setActiveMenu={setActiveMenu}
           >
             <MenuLink
@@ -92,7 +103,7 @@ const Sidebar = () => {
 
           <MenuSection
             title="Gear"
-            menu={activeMenu}
+            activeMenu={activeMenu}
             setActiveMenu={setActiveMenu}
           >
             <MenuLink
@@ -116,7 +127,7 @@ const Sidebar = () => {
 
           <MenuSection
             title="Recording"
-            menu={activeMenu}
+            activeMenu={activeMenu}
             setActiveMenu={setActiveMenu}
           >
             <MenuLink
@@ -139,7 +150,7 @@ const Sidebar = () => {
 
           <MenuSection
             title="Edit"
-            menu={activeMenu}
+            activeMenu={activeMenu}
             setActiveMenu={setActiveMenu}
           >
             <MenuLink
@@ -166,7 +177,7 @@ const Sidebar = () => {
 
           <MenuSection
             title="Sharing"
-            menu={activeMenu}
+            activeMenu={activeMenu}
             setActiveMenu={setActiveMenu}
           >
             <MenuLink
@@ -185,7 +196,7 @@ const Sidebar = () => {
 
           <MenuSection
             title="Time"
-            menu={activeMenu}
+            activeMenu={activeMenu}
             setActiveMenu={setActiveMenu}
           >
             <MenuLink
@@ -200,7 +211,7 @@ const Sidebar = () => {
 
           <MenuSection
             title="Index"
-            menu={activeMenu}
+            activeMenu={activeMenu}
             setActiveMenu={setActiveMenu}
           >
             <MenuLink link="/about" content="About" />

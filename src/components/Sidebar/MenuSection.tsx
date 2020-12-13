@@ -6,14 +6,14 @@ import styles from '../../../styles/modules/sidebar.module.scss';
 type MenuSectionTypes = {
   title: string;
   children: React.ReactNode;
-  menu: string;
+  activeMenu: string;
   setActiveMenu: any;
 };
 // MenuSection refers to the clickable Title and following list of links
 const MenuSection = ({
   title,
   children,
-  menu,
+  activeMenu,
   setActiveMenu
 }: MenuSectionTypes) => {
   // Handle the click from the main menu element. This is super WIP
@@ -31,7 +31,7 @@ const MenuSection = ({
   const routePath = () => router.route.toLowerCase().split('/')[1];
 
   const isMenuSelected = () =>
-    menu === title || routePath() === title.toLowerCase();
+    activeMenu === title || routePath() === title.toLowerCase();
 
   return (
     <div className={`${styles.section} menu_section`}>
