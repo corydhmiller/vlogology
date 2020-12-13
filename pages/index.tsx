@@ -6,9 +6,9 @@ const Home: React.FunctionComponent<null> = () => {
     <Layout title="Learn How To Vlog and Start Vlogging Today (FREE Guide and Lessons">
       <>
         <div className="homepage-hero">
-          <div className="row">
+          <div className="grid grid-cols-2">
             <div className="col-xs-12 col-md-5">
-              <div className="serif hero-left hero-yellow padding--l">
+              <div className="serif hero-left hero-yellow p-12">
                 <div className="block block-copy">
                   <h2 className="big-header">“vlog”</h2>
                   <p className="subtitle">1. noun</p>
@@ -21,7 +21,7 @@ const Home: React.FunctionComponent<null> = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xs-12 col-md-7 padding--l">
+            <div className="col-xs-12 col-md-7 p-12">
               <div className="flex-container flex-center">
                 <div className="block block-copy">
                   <h2>So you want to start a vlog.</h2>
@@ -61,7 +61,7 @@ const Home: React.FunctionComponent<null> = () => {
         </div>
         <div className="row--dark">
           <div className="row">
-            <div className="col-xs-12 padding--l">
+            <div className="col-xs-12 p-12">
               <div className="flex-container flex-center">
                 <div className="media">
                   <div className="media__video shadow--yellow">
@@ -82,7 +82,7 @@ const Home: React.FunctionComponent<null> = () => {
           <div className="row">
             <div className="col-xs-12">
               <div className="flex-container flex-center">
-                <div className="block block-copy margin--l-bottom">
+                <div className="block block-copy mb-12">
                   <div className="text-center">
                     <a href="/start/why-vlog/">
                       <button type="button" className="button button--yellow">
@@ -98,7 +98,7 @@ const Home: React.FunctionComponent<null> = () => {
         <div className="row">
           <div className="col-xs-12 col-sm-5">
             <div className="animate" style={{ height: 500 }}>
-              <div className="block margin--l-top flex-container">
+              <div className="block mt-12 flex-container">
                 <div
                   className="image__border image__border--yellow image--medium flex-end animate__object animate__fadein"
                   data-animation="fadein"
@@ -171,7 +171,7 @@ const Home: React.FunctionComponent<null> = () => {
 
         <div className="row center-xs">
           <div className="col-xs-12 col-sm-8 col-md-6">
-            <div className="flex-container flex-center margin--l-top">
+            <div className="flex-container flex-center mt-12">
               <div className="block">
                 <div className="massive font--bold">
                   Vlogs are
@@ -196,11 +196,11 @@ const Home: React.FunctionComponent<null> = () => {
           </div>
         </div>
         <div className="row end-xs">
-          <div className="endbar endbar-right margin--l-bottom" />
+          <div className="endbar endbar-right mb-12" />
         </div>
 
         <div className="row">
-          <div className="col-xs-12 padding--l">
+          <div className="col-xs-12 p-12">
             <div className="flex-container flex-center">
               <div className="block block-copy">
                 <p>
@@ -255,14 +255,14 @@ const Home: React.FunctionComponent<null> = () => {
             data-animation="flyin"
           >
             <div
-              className="animate__content padding--sm flex-container flex-center animate__flyin animate__flyin--right animate__flyin--complete"
+              className="animate__content pt-4 pb-8 flex-container flex-center animate__flyin animate__flyin--right animate__flyin--complete"
               data-animation="flyin"
               data-delay="50"
             >
               <div className="col-xs-12 col-sm-8">
-                <div className="flex-container flex-center margin--l">
-                  <div className="block padding--sm">
-                    <div className="massive text-center font--bold">
+                <div className="flex-container flex-center my-12">
+                  <div className="block pt-4 pb-8">
+                    <div className="text-center massive font--bold">
                       Vlogging doesn’t have to be{' '}
                       <span className="yellow">complicated.</span>
                     </div>
@@ -279,7 +279,7 @@ const Home: React.FunctionComponent<null> = () => {
         </div>
 
         <div className="row">
-          <div className="col-xs-12 padding--l">
+          <div className="col-xs-12 p-12">
             <div className="flex-container flex-center">
               <div className="block block-copy">
                 <h2>Start Vlogging Without the Headaches</h2>
@@ -314,7 +314,7 @@ const Home: React.FunctionComponent<null> = () => {
           </div>
         </div>
 
-        <div className="padding--l bg--yellow">
+        <div className="p-12 bg--yellow">
           <div className="row">
             <div className="col-xs-12 col-sm-6">
               <div className="flex-container flex-center">
@@ -357,7 +357,7 @@ const Home: React.FunctionComponent<null> = () => {
         </div>
         <div className="row--dark">
           <div className="row">
-            <div className="col-xs-12 padding--md-top">
+            <div className="col-xs-12 mt-8">
               <div className="flex-container flex-center">
                 <div className="block block-copy">
                   <h2>

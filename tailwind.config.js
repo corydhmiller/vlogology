@@ -321,6 +321,7 @@ module.exports = {
     float: [],
     fontFamily: [],
     fontWeight: [],
+    grid: ['grid'],
     height: ['responsive'],
     lineHeight: [],
     listStylePosition: [],
