@@ -33,21 +33,10 @@ p {
   text-align: center;
 }
 
+// text-lg sm:text-2xl my-8 mx-4 lg:mt-8 lg:mb-16 font-bold italic text-gray-500 px-4
+
 blockquote {
   border-left: 2rem solid $yellow;
-  font-size: 1.85rem;
-  margin: 2rem 1rem;
-  padding: 0 1rem;
-  font-weight: bold;
-  font-style: italic;
-  color: $grey;
-
-  &--twitter {
-    font-size: 1.45rem;
-  }
-  @include screen--l {
-    margin: 2rem 4rem;
-  }
 }
 
 .subtitle {

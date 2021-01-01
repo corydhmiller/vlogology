@@ -3,7 +3,6 @@
 // Blocks
 
 .block {
-  padding:0 20px;
   &-copy {
     max-width: 35em;
   }
@@ -12,8 +11,13 @@
 .row--dark {
   background: $black;
   color: $white;
-  & h1, h2, h3, h4, h5, h6 {
-   color:$lesswhite;
+  & h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $lesswhite;
   }
 }
 
@@ -33,7 +37,7 @@
     }
   }
   &-full {
-   width:100%;
+    width: 100%;
   }
 }
 
@@ -50,9 +54,9 @@
     }
   }
   &--medium {
-    max-width:500px;
+    max-width: 500px;
   }
   &--small {
-    max-width:200px;
+    max-width: 200px;
   }
 }

@@ -4,19 +4,22 @@ import Link from 'next/link';
 import styles from '../styles/modules/header.module.scss';
 import LogoImg from '../public/images/logo.svg';
 
-const Header = () => {
+const Header = ({ toggleSidebar }) => {
   return (
     <header
       className={`${styles.header} bg-black flex items-center w-full lg:hidden fixed top-0 left-0 z-40`}
     >
       <div className="header__menu">
         <div className="menu__button">
-          <div
-            className="button button--yellow button--menu"
+          <button
+            className="button button--yellow button--menu button--inline"
             data-action="toggleMenu"
+            onClick={toggleSidebar}
+            onKeyUp={toggleSidebar}
+            type="button"
           >
             Menu
-          </div>
+          </button>
         </div>
       </div>
       <div className={`${styles.logo} ml-auto`}>

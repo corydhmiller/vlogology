@@ -9,14 +9,13 @@ import LogoImg from '../public/images/logo.svg';
 import MenuLink from './Sidebar/MenuLink';
 import MenuSection from './Sidebar/MenuSection';
 
-const Sidebar = () => {
+type SidebarProps = {
+  sidebarIsOpen: boolean;
+  toggleSidebar: any;
+};
+
+const Sidebar = ({ sidebarIsOpen, toggleSidebar }: SidebarProps) => {
   const [activeMenu, setActiveMenu] = React.useState();
-
-  const [sidebarIsOpen, setSidebarOpen] = React.useState(false);
-
-  const toggleSidebarOpen = () => {
-    setSidebarOpen(!sidebarIsOpen);
-  };
 
   return (
     <aside
@@ -24,18 +23,23 @@ const Sidebar = () => {
       className={`${
         styles.sidebar
       } flex flex-col bg-gray-800 z-50 text-white fixed overflow-y-scroll top-0 h-screen ${
-        sidebarIsOpen ? 'sidebar_open' : ''
+        sidebarIsOpen ? styles.sidebar_open : ''
       }`}
+      // style={{
+      //   transform: `translateX(${sidebarIsOpen ? '0' : '-250px'})`
+      // }}
     >
       <div className={styles.close}>
         <div className={styles.menu__button}>
-          <div
+          <button
             className="button button--yellow button--menu button--inline"
             data-action="toggleMenu"
-            onClick={toggleSidebarOpen}
+            onClick={toggleSidebar}
+            onKeyUp={toggleSidebar}
+            type="button"
           >
             Close
-          </div>
+          </button>
         </div>
       </div>
       <div className={styles.logo}>

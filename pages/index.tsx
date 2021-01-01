@@ -3,25 +3,23 @@ import Layout from '../components/Layout';
 
 const Home: React.FunctionComponent<null> = () => {
   return (
-    <Layout title="Learn How To Vlog and Start Vlogging Today (FREE Guide and Lessons">
+    <Layout title="Learn How To Vlog and Start Vlogging Today (FREE Guide and Lessons)">
       <>
         <div className="homepage-hero">
           <div className="grid md:grid-cols-2">
-            <div className="">
-              <div className="p-12 serif hero-left hero-yellow">
-                <div className="block block-copy">
-                  <h2 className="big-header">“vlog”</h2>
-                  <p className="subtitle">1. noun</p>
-                  <p>
-                    a blog, channel, or feed that features videos rather than
-                    text or images.
-                  </p>
-                  <p className="subtitle">2. verb</p>
-                  <p>to maintain or add posts to a vlog.</p>
-                </div>
+            <div className="p-8 py-12 text-2xl text-right bg-yellow-400 lg:px-12 serif hero-left">
+              <div className="block block-copy">
+                <h2 className="big-header">“vlog”</h2>
+                <p className="subtitle">1. noun</p>
+                <p>
+                  a blog, channel, or feed that features videos rather than text
+                  or images.
+                </p>
+                <p className="subtitle">2. verb</p>
+                <p>to maintain or add posts to a vlog.</p>
               </div>
             </div>
-            <div className="p-12">
+            <div className="p-8 py-12 lg:px-12">
               <div className="flex-container flex-center">
                 <div className="block block-copy">
                   <h2>So you want to start a vlog.</h2>
@@ -32,7 +30,7 @@ const Home: React.FunctionComponent<null> = () => {
                   </p>
                   <p>It’s increasing in popularity, too.</p>
                   <p>
-                    Have you noticed that
+                    Have you noticed that{' '}
                     <strong>
                       many of the biggest channels on YouTube are either mostly
                       or completely based on vlogging?
@@ -48,7 +46,7 @@ const Home: React.FunctionComponent<null> = () => {
                     You’ve sat on your couch thinking about what you’d even try
                     to record, and yet something’s holding you back.
                   </p>
-                  <blockquote>
+                  <blockquote className="px-4 mx-4 my-8 text-lg italic font-bold text-gray-500 sm:text-2xl lg:mt-8 lg:mb-16">
                     “I don’t really have anything
                     <br />
                     worth sharing.” – You, probably

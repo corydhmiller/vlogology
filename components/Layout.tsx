@@ -10,19 +10,33 @@ type LayoutProps = {
   children: React.ReactNode;
 };
 
-const Layout = ({ title, children }: LayoutProps) => (
-  <>
-    <Head>
-      <title>{title} - Vlogology</title>
-      <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    </Head>
-    <Header />
-    <div>
-      <Sidebar />
-      <PageWrapper>{children}</PageWrapper>
-    </div>
-  </>
-);
+const Layout = ({ title, children }: LayoutProps) => {
+  // Handle the sidebar staate from Layout so that we can toggle sidebar from anywhere
+  const [sidebarIsOpen, setSidebarOpen] = React.useState(false);
+
+  return (
+    <>
+      <Head>
+        <title>{title} - Vlogology</title>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Header
+        toggleSidebar={() => {
+          setSidebarOpen(!sidebarIsOpen);
+        }}
+      />
+      <div>
+        <Sidebar
+          sidebarIsOpen={sidebarIsOpen}
+          toggleSidebar={() => {
+            setSidebarOpen(!sidebarIsOpen);
+          }}
+        />
+        <PageWrapper>{children}</PageWrapper>
+      </div>
+    </>
+  );
+};
 
 export default Layout;

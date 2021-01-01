@@ -6,9 +6,12 @@ $sidebarWidth: 250px;
 
 .sidebar {
   width: $sidebarWidth;
-
-  &_visible {
-    left: 0;
+  transition: 0.5s all;
+  @media screen and (max-width: $grid-breakpoint-l - 1px) {
+    transform: translateX(-250px);
+  }
+  &_open {
+    transform: translateX(0);
   }
   & li {
     &:before {
