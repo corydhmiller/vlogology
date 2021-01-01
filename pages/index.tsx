@@ -2,6 +2,7 @@ import * as React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Layout from '../components/Layout';
+import Video from '../components/Video';
 
 const Home: React.FunctionComponent<null> = () => {
   return (
@@ -11,14 +12,20 @@ const Home: React.FunctionComponent<null> = () => {
           <div className="grid md:grid-cols-2">
             <div className="p-8 py-12 text-2xl text-right bg-yellow-400 lg:px-12 serif hero-left">
               <div className="copy-block">
-                <h2 className="mb-8 text-5xl">“vlog”</h2>
-                <div className="text-xl italic opacity-75">1. noun</div>
-                <p>
+                <h2 className="mb-8 font-serif text-5xl font-bold">“vlog”</h2>
+                <div className="font-serif text-2xl italic opacity-75">
+                  1. noun
+                </div>
+                <p className="font-serif">
                   a blog, channel, or feed that features videos rather than text
                   or images.
                 </p>
-                <div className="text-xl italic opacity-75">2. verb</div>
-                <p>to maintain or add posts to a vlog.</p>
+                <div className="font-serif text-2xl italic opacity-75">
+                  2. verb
+                </div>
+                <p className="font-serif">
+                  to maintain or add posts to a vlog.
+                </p>
               </div>
             </div>
             <div className="p-8 py-12 lg:px-12">
@@ -59,19 +66,20 @@ const Home: React.FunctionComponent<null> = () => {
             </div>
           </div>
         </div>
-        <div className="py-12 bg-gray-600">
-          <div className="flex flex-col items-center justify-center text-center">
-            <iframe
-              title="video"
-              width="560"
-              height="315"
-              className="max-w-full"
-              src="https://www.youtube.com/embed/z8YF6XU7r4A?rel=0&amp;showinfo=0"
-              frameBorder="0"
-              allow="autoplay; encrypted-media"
-              allowFullScreen
-            />
-            <div className="mt-4">
+        <div className="py-24 bg-black">
+          <div className="flex flex-col justify-center mx-auto text-center sm:w-8/12">
+            <Video>
+              <iframe
+                title="video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/z8YF6XU7r4A?rel=0&amp;showinfo=0"
+                frameBorder="0"
+                allow="autoplay; encrypted-media"
+                allowFullScreen
+              />
+            </Video>
+            <div className="mt-12">
               <Link href="/start/why-vlog/">
                 <button type="button" className="button button--yellow">
                   Get started with vlogging
@@ -91,7 +99,7 @@ const Home: React.FunctionComponent<null> = () => {
           </div>
           <div className="flex items-center copy-block">
             <div className="px-4 py-4">
-              <h2>Hey there! I’m Cory Miller.</h2>
+              <p className="font-bold">Hey there! I’m Cory Miller.</p>
               <p>
                 I started vlogging on a whim. No goal, no direction, and no
                 equipment. I just wanted to do this thing people called
@@ -121,7 +129,7 @@ const Home: React.FunctionComponent<null> = () => {
               </p>
               <p>
                 I live in Dublin, Ireland, with my wife and two daughters, and I
-                have a
+                have a{' '}
                 <a
                   href="https://youtube.com/corydhmiller"
                   target="_blank"
@@ -143,30 +151,10 @@ const Home: React.FunctionComponent<null> = () => {
           </div>
         </div>
 
-        <div className="row center-xs">
-          <div className="col-xs-12 col-sm-8 col-md-6">
-            <div className="mt-12 flex-container flex-center">
-              <div className="block">
-                <div className="massive font--bold">
-                  Vlogs are
-                  <div
-                    className="animate display--inline"
-                    style={{ height: 0 }}
-                  >
-                    <span className="yellow">
-                      <span
-                        className="animate__object animate__typeout"
-                        data-animation="typeout"
-                        data-delay="500"
-                      >
-                        stories
-                      </span>
-                    </span>
-                  </div>
-                  , and everyone has a story.
-                </div>
-              </div>
-            </div>
+        <div className="mt-12">
+          <div className="text-6xl font-bold">
+            Vlogs are <span className="text-yellow-400 shadow-sm">stories</span>
+            , and everyone has a story.
           </div>
         </div>
         <div className="row end-xs">

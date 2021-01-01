@@ -69,7 +69,11 @@ module.exports = {
       '3xl': '1.875rem',
       '4xl': '2.25rem',
       '5xl': '3rem',
-      '6xl': '4rem'
+      '6xl': '6rem'
+    },
+    fontFamily: {
+      sans: ['Source Sans Pro', 'sans-serif'],
+      serif: ['Lora', 'serif']
     },
     fontWeight: {
       light: '300',
@@ -224,8 +228,7 @@ module.exports = {
     },
     boxShadow: {
       default: '0px 2.8px 12px rgba(176, 184, 190, 0.1)',
-      lg: '0 2px 9px 0 rgba(210, 214, 220, 0.45)',
-      inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
+      yellow: '8px 8px 0px 0px #f7dd38',
       outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
       none: 'none'
     },

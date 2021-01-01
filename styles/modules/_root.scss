@@ -16,7 +16,6 @@
 }
 
 html {
-  font-family: $sans;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-size: 125%;
@@ -27,7 +26,6 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: $sans;
   color: $black;
   background: $white;
   -webkit-font-smoothing: antialiased;
@@ -53,11 +51,6 @@ li {
     color: $yellow;
     margin-right: 0.35rem;
   }
-}
-
-input,
-button {
-  font-family: $sans;
 }
 
 input,
