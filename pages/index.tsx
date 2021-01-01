@@ -1,27 +1,29 @@
 import * as React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import Layout from '../components/Layout';
 
 const Home: React.FunctionComponent<null> = () => {
   return (
     <Layout title="Learn How To Vlog and Start Vlogging Today (FREE Guide and Lessons)">
       <>
-        <div className="homepage-hero">
+        <div className="w-full">
           <div className="grid md:grid-cols-2">
             <div className="p-8 py-12 text-2xl text-right bg-yellow-400 lg:px-12 serif hero-left">
-              <div className="block block-copy">
-                <h2 className="big-header">“vlog”</h2>
-                <p className="subtitle">1. noun</p>
+              <div className="copy-block">
+                <h2 className="mb-8 text-5xl">“vlog”</h2>
+                <div className="text-xl italic opacity-75">1. noun</div>
                 <p>
                   a blog, channel, or feed that features videos rather than text
                   or images.
                 </p>
-                <p className="subtitle">2. verb</p>
+                <div className="text-xl italic opacity-75">2. verb</div>
                 <p>to maintain or add posts to a vlog.</p>
               </div>
             </div>
             <div className="p-8 py-12 lg:px-12">
               <div className="flex-container flex-center">
-                <div className="block block-copy">
+                <div className="copy-block">
                   <h2>So you want to start a vlog.</h2>
                   <p>Awesome.</p>
                   <p>
@@ -46,7 +48,7 @@ const Home: React.FunctionComponent<null> = () => {
                     You’ve sat on your couch thinking about what you’d even try
                     to record, and yet something’s holding you back.
                   </p>
-                  <blockquote className="px-4 mx-4 my-8 text-lg italic font-bold text-gray-500 sm:text-2xl lg:mt-8 lg:mb-16">
+                  <blockquote className="px-4 my-8 text-lg italic font-bold text-gray-500 sm:text-2xl lg:mt-8 lg:mb-16">
                     “I don’t really have anything
                     <br />
                     worth sharing.” – You, probably
@@ -57,112 +59,86 @@ const Home: React.FunctionComponent<null> = () => {
             </div>
           </div>
         </div>
-        <div className="row--dark">
-          <div className="row">
-            <div className="p-12 col-xs-12">
-              <div className="flex-container flex-center">
-                <div className="media">
-                  <div className="media__video shadow--yellow">
-                    <iframe
-                      title="video"
-                      width="560"
-                      height="315"
-                      src="https://www.youtube.com/embed/z8YF6XU7r4A?rel=0&amp;showinfo=0"
-                      frameBorder="0"
-                      allow="autoplay; encrypted-media"
-                      allowFullScreen
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-xs-12">
-              <div className="flex-container flex-center">
-                <div className="block mb-12 block-copy">
-                  <div className="text-center">
-                    <a href="/start/why-vlog/">
-                      <button type="button" className="button button--yellow">
-                        Get started with vlogging
-                      </button>
-                    </a>
-                  </div>
-                </div>
-              </div>
+        <div className="py-12 bg-gray-600">
+          <div className="flex flex-col items-center justify-center text-center">
+            <iframe
+              title="video"
+              width="560"
+              height="315"
+              className="max-w-full"
+              src="https://www.youtube.com/embed/z8YF6XU7r4A?rel=0&amp;showinfo=0"
+              frameBorder="0"
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            />
+            <div className="mt-4">
+              <Link href="/start/why-vlog/">
+                <button type="button" className="button button--yellow">
+                  Get started with vlogging
+                </button>
+              </Link>
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-xs-12 col-sm-5">
-            <div className="animate" style={{ height: 500 }}>
-              <div className="block mt-12 flex-container">
-                <div
-                  className="image__border image__border--yellow image--medium flex-end animate__object animate__fadein"
-                  data-animation="fadein"
-                  data-fadetime="500"
-                >
-                  <img
-                    src="/wp-content/uploads/2017/11/cory-profile-less-large.png"
-                    alt=""
-                  />
-                </div>
-              </div>
-            </div>
+        <div className="grid grid-cols-1 pt-12 sm:grid-cols-2">
+          <div className="flex items-start justify-center mb-12">
+            <Image
+              src="/images/cory-miller.png"
+              width="300"
+              height="300"
+              alt="Me, Cory Miller!"
+            />
           </div>
-          <div className="col-xs-12 col-sm-7">
-            <div className="flex-container flex-center">
-              <div className="block block-copy">
-                <h2>Hey there! I’m Cory Miller.</h2>
-                <p>
-                  I started vlogging on a whim. No goal, no direction, and no
-                  equipment. I just wanted to do this thing people called
-                  “vlogging”.
-                </p>
-                <p>
-                  Heck, when I approached my wife about starting a vlog, she
-                  literally said, “Do you have to?”
-                </p>
-                <p>
-                  It was hard. I showed up for 78 days, every single day, and
-                  produced a video for my YouTube channel. A daily show while
-                  having a family, a full-time job, and working on moving to
-                  another country.
-                </p>
-                <p>
-                  Eventually I moved to a weekly schedule. I began to develop
-                  techniques, things to save time during filming and editing. I
-                  planned, I made mistakes, and I pressed on.
-                </p>
-                <p>I didn’t even know if it would be worth it.</p>
-                <p>Spoiler: It was.</p>
-                <p>
-                  <strong>Vlogging is part of my life now,</strong> it’s simply
-                  part of what I do, and the personal benefits have been
-                  incredible.
-                </p>
-                <p>
-                  I live in Dublin, Ireland, with my wife and two daughters, and
-                  I have a
-                  <a
-                    href="https://youtube.com/corydhmiller"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    weekly vlog
-                  </a>{' '}
-                  about my international life, travel, and personal journey
-                  through this world.
-                </p>
-                <p>
-                  <strong>
-                    I want to help you find and tell your story through
-                    vlogging,
-                  </strong>{' '}
-                  whether you’re doing it on your own, building a brand, or
-                  wanting to start a vlog for your business.
-                </p>
-              </div>
+          <div className="flex items-center copy-block">
+            <div className="px-4 py-4">
+              <h2>Hey there! I’m Cory Miller.</h2>
+              <p>
+                I started vlogging on a whim. No goal, no direction, and no
+                equipment. I just wanted to do this thing people called
+                “vlogging”.
+              </p>
+              <p>
+                Heck, when I approached my wife about starting a vlog, she
+                literally said, “Do you have to?”
+              </p>
+              <p>
+                It was hard. I showed up for 78 days, every single day, and
+                produced a video for my YouTube channel. A daily show while
+                having a family, a full-time job, and working on moving to
+                another country.
+              </p>
+              <p>
+                Eventually I moved to a weekly schedule. I began to develop
+                techniques, things to save time during filming and editing. I
+                planned, I made mistakes, and I pressed on.
+              </p>
+              <p>I didn’t even know if it would be worth it.</p>
+              <p>Spoiler: It was.</p>
+              <p>
+                <strong>Vlogging is part of my life now,</strong> it’s simply
+                part of what I do, and the personal benefits have been
+                incredible.
+              </p>
+              <p>
+                I live in Dublin, Ireland, with my wife and two daughters, and I
+                have a
+                <a
+                  href="https://youtube.com/corydhmiller"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  weekly vlog
+                </a>{' '}
+                about my international life, travel, and personal journey
+                through this world.
+              </p>
+              <p>
+                <strong>
+                  I want to help you find and tell your story through vlogging,
+                </strong>{' '}
+                whether you’re doing it on your own, building a brand, or
+                wanting to start a vlog for your business.
+              </p>
             </div>
           </div>
         </div>
