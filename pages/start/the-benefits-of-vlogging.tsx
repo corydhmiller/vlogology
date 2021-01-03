@@ -211,6 +211,13 @@ const BenefitsOfVlogging = () => {
           Next up I want to address some misconceptions about vlogging and why
           there’s no reason you can’t start vlogging <em>today</em>.
         </p>
+        <div className="text-center">
+          <Link href="/start/misconceptions-about-vlogging">
+            <a href="/start/misconceptions-about-vlogging">
+              <Button color="yellow">Continue Reading</Button>
+            </a>
+          </Link>
+        </div>
       </CopyBlock>
     </Page>
   );
