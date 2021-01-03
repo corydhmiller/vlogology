@@ -1,8 +1,10 @@
 import * as React from 'react';
 import Link from 'next/link';
 import Page from '../../components/Page';
+// UI
 import CopyBlock from '../../components/ui/CopyBlock';
 import Button from '../../components/ui/Button';
+import Massive from '../../components/ui/Massive';
 
 const WhyVlog = () => {
   return (
@@ -86,19 +88,13 @@ const WhyVlog = () => {
           <p>Now back to the present.</p>
         </CopyBlock>
       </div>
-      <div className="max-w-5xl px-4 my-12 ml-auto">
-        <div className="font-bold leading-tight text-screen sm:text-6xl">
-          It’s easier than ever to{' '}
-          <span className="text-yellow-400 text-shadow-sm">
-            publish something online
-          </span>
-          .
-        </div>
-      </div>
-      <div className="w-full h-8 mb-12 ml-auto bg-yellow-400" />
-      <div className="row end-xs">
-        <div className="endbar endbar-right margin--l-bottom" />
-      </div>
+      <Massive>
+        It’s easier than ever to{' '}
+        <span className="text-yellow-400 text-shadow-sm">
+          publish something online
+        </span>
+        .
+      </Massive>
       <CopyBlock>
         <p>
           It’s now easier than ever to publish something online. All it takes is

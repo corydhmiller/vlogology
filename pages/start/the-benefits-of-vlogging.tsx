@@ -4,6 +4,7 @@ import Page from '../../components/Page';
 import CopyBlock from '../../components/ui/CopyBlock';
 import Blockquote from '../../components/ui/Blockquote';
 import Button from '../../components/ui/Button';
+import Massive from '../../components/ui/Massive';
 
 const BenefitsOfVlogging = () => {
   return (
@@ -79,6 +80,12 @@ const BenefitsOfVlogging = () => {
           my family.
         </p>
       </CopyBlock>
+      <Massive>
+        <span className="text-yellow-400 text-shadow-sm">
+          A vlog is little pieces of history
+        </span>{' '}
+        just waiting to be remembered.
+      </Massive>
     </Page>
   );
 };
