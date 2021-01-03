@@ -1,16 +1,13 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import Head from 'next/head';
 
 import Header from './Header';
 import Sidebar from './Sidebar';
 import PageWrapper from './PageWrapper';
 
-type LayoutProps = {
-  title: string;
-  children: React.ReactNode;
-};
-
-const Layout = ({ title, children }: LayoutProps) => {
+const Layout = ({ ...props }) => {
+  const { title, children } = props;
   // Handle the sidebar staate from Layout so that we can toggle sidebar from anywhere
   const [sidebarIsOpen, setSidebarOpen] = React.useState(false);
 
@@ -37,6 +34,11 @@ const Layout = ({ title, children }: LayoutProps) => {
       </div>
     </>
   );
+};
+
+Layout.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default Layout;

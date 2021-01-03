@@ -17,12 +17,10 @@ const BenefitsOfVlogging = () => {
           adding up the investment of time and possibly money, the question of
           “is this even worth it?” will inevitably arise.
         </p>
-
         <p>
           The question of return on investment is a good one to explore. Why
           bother starting something if it has no tangible benefits?
         </p>
-
         <p>
           Here are a few of the benefits and returns that I (and others) have
           seen as a result of starting a vlog:
@@ -37,14 +35,12 @@ const BenefitsOfVlogging = () => {
           to do something as an individual, arguably{' '}
           <strong>the most important thing you need is trust.</strong>
         </p>
-
         <p>
           From a business standpoint, you want to sell more products, get more
           customers or clients, and stay in business (and hopefully grow!). If
           nobody knows who you are or has any confidence in your business, what
           makes you think they’ll actually buy from you?
         </p>
-
         <p>
           Anything you’re wanting to do starts with trust. Companies spend
           thousands, even millions of dollars on advertising, marketing, and
@@ -61,25 +57,21 @@ const BenefitsOfVlogging = () => {
         </h2>
 
         <p>May 22, 2016. The day my daughter Melody was born.</p>
-
         <p>
           From a vlogging perspective, it was a disaster. I had recorded nearly
           the entire thing: leaving the house, driving to the hospital, getting
           settled, the little breaks I would take to recap what was going on, to
           finally meeting our new daughter.
         </p>
-
         <p>
           I recorded our first daughter Rylynn meeting Melody for the first
           time. I recorded family and friends coming in, the tears and laughter
           and joy.
         </p>
-
         <p>
           As I went to edit together the footage, I discovered that the SD card
           was corrupted. I had lost everything.
         </p>
-
         <p>
           Dealing with lost footage is a story for another time, but not to be
           daunted, I pulled out my iPhone and recorded a short several-minute

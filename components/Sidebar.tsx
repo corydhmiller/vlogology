@@ -1,6 +1,5 @@
-/* eslint-disable no-console */
-/* eslint-disable no-use-before-define */
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'next/link';
 
 import styles from '../styles/modules/sidebar.module.scss';
@@ -12,12 +11,8 @@ import MenuSection from './Sidebar/MenuSection';
 // UI
 import Button from './ui/Button';
 
-type SidebarProps = {
-  sidebarIsOpen: boolean;
-  toggleSidebar: any;
-};
-
-const Sidebar = ({ sidebarIsOpen, toggleSidebar }: SidebarProps) => {
+const Sidebar = ({ ...props }) => {
+  const { sidebarIsOpen, toggleSidebar } = props;
   const [activeMenu, setActiveMenu] = React.useState();
 
   return (
@@ -222,6 +217,11 @@ const Sidebar = ({ sidebarIsOpen, toggleSidebar }: SidebarProps) => {
       </nav>
     </aside>
   );
+};
+
+Sidebar.propTypes = {
+  sidebarIsOpen: PropTypes.bool.isRequired,
+  toggleSidebar: PropTypes.func.isRequired
 };
 
 export default Sidebar;
