@@ -27,7 +27,9 @@ const BenefitsOfVlogging = () => {
           seen as a result of starting a vlog:
         </p>
 
-        <h2>1. A vlog builds trust with your audience</h2>
+        <h2 className="mt-8 mb-4 text-3xl font-bold border-yellow-400 border-b-sm">
+          1. A vlog builds trust with your audience
+        </h2>
 
         <p>
           Whether you’re building a business, growing a brand, or just wanting
@@ -53,7 +55,9 @@ const BenefitsOfVlogging = () => {
           From the moment we are born, we are learning who we can trust.
         </blockquote>
 
-        <h2>2. A vlog gives you something to look back at</h2>
+        <h2 className="mt-8 mb-4 text-3xl font-bold border-yellow-400 border-b-sm">
+          2. A vlog gives you something to look back at
+        </h2>
 
         <p>May 22, 2016. The day my daughter Melody was born.</p>
 

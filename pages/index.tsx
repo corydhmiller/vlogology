@@ -33,7 +33,9 @@ const Home: React.FunctionComponent<null> = () => {
             </div>
             <div className="py-12">
               <CopyBlock>
-                <h2>So you want to start a vlog.</h2>
+                <h2 className="mb-4 text-3xl font-bold border-yellow-400 border-b-sm">
+                  So you want to start a vlog.
+                </h2>
                 <p>Awesome.</p>
                 <p>
                   Vlogging is a fantastic way to document your life, business,

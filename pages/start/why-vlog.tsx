@@ -111,7 +111,9 @@ const WhyVlog = () => {
           video.
         </p>
 
-        <h2>But why have a vlog?</h2>
+        <h2 className="mt-8 mb-4 text-3xl font-bold border-yellow-400 border-b-sm">
+          But why have a vlog?
+        </h2>
 
         <p>
           It might have seemed to come out of the blue when I told my wife I
