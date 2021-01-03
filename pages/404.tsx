@@ -9,7 +9,7 @@ const WhyVlog: React.FunctionComponent<null> = () => {
       <CopyBlock>
         <div className="span_8 col center">
           <Heading level="h2">
-            Seems that what you're looking for doesn't exist. Awkward.
+            Seems that what you’re looking for doesn’t exist. Awkward.
           </Heading>
           <p className="center">
             You might try heading back to the{' '}
