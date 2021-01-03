@@ -1,14 +1,13 @@
 import * as React from 'react';
-import Layout from '../components/Layout';
+import Page from '../../components/Page';
 
-const WhyVlog: React.FunctionComponent<null> = () => {
+const BenefitsOfVlogging = () => {
   return (
-    <Layout title="The benefits of vlogging">
-      <div>
-        <main className="grid">The benefits of vlogging</main>
-      </div>
-    </Layout>
+    <Page title="The benefits of vlogging" image="/images/hello.jpg">
+      <div>Hey there</div>
+      <p>How it going</p>
+    </Page>
   );
 };
 
-export default WhyVlog;
+export default BenefitsOfVlogging;
