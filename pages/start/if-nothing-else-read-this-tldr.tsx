@@ -6,7 +6,7 @@ import Button from '../../components/ui/Button';
 import Massive from '../../components/ui/Massive';
 
 const IfNothingElse = () => {
-  const nextUrl = '/story/your-greatest-advantage';
+  const nextPage = '/story/your-greatest-advantage';
 
   return (
     <Page
@@ -48,8 +48,8 @@ const IfNothingElse = () => {
         <p>You just have to actually get started.</p>
 
         <div className="text-center">
-          <Link href={nextUrl}>
-            <a href={nextUrl}>
+          <Link href={nextPage}>
+            <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
             </a>
           </Link>

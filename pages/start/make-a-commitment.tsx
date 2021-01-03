@@ -7,6 +7,8 @@ import Button from '../../components/ui/Button';
 import Massive from '../../components/ui/Massive';
 
 const MakeACommitment = () => {
+  const nextPage = '/start/the-end-goal';
+
   return (
     <Page
       title="Make a commitment"
@@ -189,8 +191,8 @@ const MakeACommitment = () => {
         </p>
 
         <div className="text-center">
-          <Link href="/start/the-end-goal">
-            <a href="/start/the-end-goal">
+          <Link href={nextPage}>
+            <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
             </a>
           </Link>

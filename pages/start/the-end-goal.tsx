@@ -7,6 +7,8 @@ import Button from '../../components/ui/Button';
 import Heading from '../../components/ui/Heading';
 
 const TheEndGoal = () => {
+  const nextPage = '/start/if-nothing-else-read-this-tldr';
+
   return (
     <Page
       title="The end goal"
@@ -79,8 +81,8 @@ const TheEndGoal = () => {
         </p>
 
         <div className="text-center">
-          <Link href="/start/if-nothing-else-read-this-tldr">
-            <a href="/start/if-nothing-else-read-this-tldr">
+          <Link href={nextPage}>
+            <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
             </a>
           </Link>

@@ -8,6 +8,8 @@ import Massive from '../../components/ui/Massive';
 import Heading from '../../components/ui/Heading';
 
 const BenefitsOfVlogging = () => {
+  const nextPage = '/start/misconceptions-about-vlogging';
+
   return (
     <Page
       title="The benefits of vlogging"
@@ -212,8 +214,8 @@ const BenefitsOfVlogging = () => {
           there’s no reason you can’t start vlogging <em>today</em>.
         </p>
         <div className="text-center">
-          <Link href="/start/misconceptions-about-vlogging">
-            <a href="/start/misconceptions-about-vlogging">
+          <Link href={nextPage}>
+            <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
             </a>
           </Link>

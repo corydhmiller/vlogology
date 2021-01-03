@@ -8,6 +8,8 @@ import Massive from '../../components/ui/Massive';
 import Heading from '../../components/ui/Heading';
 
 const MisconceptionsAboutVlogging = () => {
+  const nextPage = '/start/make-a-commitment';
+
   return (
     <Page
       title="Misconceptions about vlogging"
@@ -208,8 +210,8 @@ const MisconceptionsAboutVlogging = () => {
           something sooner rather than later.
         </p>
         <div className="text-center">
-          <Link href="/start/make-a-commitment">
-            <a href="/start/make-a-commitment">
+          <Link href={nextPage}>
+            <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
             </a>
           </Link>

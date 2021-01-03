@@ -7,6 +7,8 @@ import Button from '../../components/ui/Button';
 import Massive from '../../components/ui/Massive';
 
 const WhyVlog = () => {
+  const nextPage = '/start/the-benefits-of-vlogging/';
+
   return (
     <Page title="Why vlog?" image="/images/pages/headers/why-vlog.jpg">
       <CopyBlock>
@@ -168,8 +170,8 @@ const WhyVlog = () => {
           a vlog.
         </p>
         <div className="text-center">
-          <Link href="/start/the-benefits-of-vlogging/">
-            <a href="/start/the-benefits-of-vlogging/">
+          <Link href={nextPage}>
+            <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
             </a>
           </Link>
