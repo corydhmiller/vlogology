@@ -22,7 +22,7 @@ const Page = ({ ...props }) => {
         } text-center bg-black`}
       >
         <div className="relative z-30 inline-block pb-8 border-yellow-400 border-b-md">
-          <h1 className="font-bold leading-tight text-white text-screen sm:text-6xl">
+          <h1 className="font-bold leading-tight text-white text-screen md:text-6xl">
             {title}
           </h1>
         </div>
