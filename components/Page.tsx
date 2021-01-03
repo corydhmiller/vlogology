@@ -1,17 +1,14 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import Image from 'next/image';
 import Layout from './Layout';
 
-type PageProps = {
-  title: string;
-  image: string;
-  children: React.ReactNode;
-};
+const Page = ({ ...props }) => {
+  const { title, image, children } = props;
 
-const Page = ({ title, image = 'none', children }: PageProps) => {
   const conditionalImage = () => {
     // This is janky af but I don't have the time
-    if (image !== 'none') {
+    if (image) {
       return <Image src={image} layout="fill" objectFit="cover" alt="" />;
     }
     return '';
@@ -37,6 +34,16 @@ const Page = ({ title, image = 'none', children }: PageProps) => {
       <section className="py-12">{children}</section>
     </Layout>
   );
+};
+
+Page.propTypes = {
+  title: PropTypes.string.isRequired,
+  image: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+  children: PropTypes.node.isRequired
+};
+
+Page.defaultProps = {
+  image: false
 };
 
 export default Page;
