@@ -2,7 +2,9 @@
 @import '../modules/mixins';
 
 .content {
+  margin-top: 52px;
   @include screen--l {
+    margin-top: 0;
     margin-left: 250px;
   }
 }

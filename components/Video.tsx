@@ -1,22 +1,9 @@
 import * as React from 'react';
-import styled from 'styled-components';
-
-const VideoWrapper = styled.div`
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-`;
+import styles from '../styles/modules/video.module.scss';
 
 const Video = ({ ...props }) => {
   const { children } = props;
-  return <VideoWrapper className="shadow-yellow">{children}</VideoWrapper>;
+  return <div className={`${styles.video} shadow-yellow`}>{children}</div>;
 };
 
 export default Video;

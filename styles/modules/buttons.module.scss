@@ -1,33 +1,14 @@
+@import '../modules/colors';
+@import '../modules/mixins';
+
 .button {
-  text-align: center;
-  font-size: 1rem;
-  padding: 0.7rem;
-  border-radius: 2rem;
-  font-weight: bold;
-
-  @include transition($ease);
-
-  position: relative;
-
   &:hover,
   &:focus {
     cursor: pointer;
     transform: scale(1.06);
   }
 
-  // Yellow Button
-  &--yellow {
-    color: $black;
-    background: $yellow;
-    box-shadow: 0 0 0 0 $darkyellow;
-
-    &:hover,
-    &:focus {
-      box-shadow: 0 3px 0 0 $darkyellow;
-    }
-  }
-
-  &--red {
+  &-red {
     color: $white;
     background: $red;
     box-shadow: 0 0 0 0 $darkred;
@@ -39,7 +20,7 @@
   }
 
   // Black Button
-  &--black {
+  &-black {
     color: $black;
     border: 2px solid $black;
 
@@ -73,6 +54,14 @@
   }
 }
 
-a.button:after {
-  display: none;
+// Yellow Button
+.yellow {
+  color: $black;
+  background: $yellow;
+  box-shadow: 0 0 0 0 $darkyellow;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 3px 0 0 $darkyellow;
+  }
 }

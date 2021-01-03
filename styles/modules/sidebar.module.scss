@@ -75,8 +75,6 @@ $sidebarWidth: 250px;
   max-height: 400px;
 }
 .toggle {
-  @include transition($fast);
-
   &:after {
     content: '';
     position: absolute;

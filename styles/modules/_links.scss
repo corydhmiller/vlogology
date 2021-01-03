@@ -1,27 +1,10 @@
 a {
-  cursor: pointer;
-  color: $orange;
-  text-decoration: none;
+  text-decoration: underline;
   font-weight: bold;
-  position: relative;
-  z-index: 1;
-
   @include transition($fast);
+  color: $orange;
 
-  &:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    z-index: -1;
-    left: 0;
-    bottom: 2px;
-    background: $yellow;
-
-    @include transition($ease);
-  }
-
-  &:hover:after {
-    width: 100%;
+  &:hover {
+    color: lighten($orange, 10%);
   }
 }

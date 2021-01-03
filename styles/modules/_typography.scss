@@ -7,3 +7,7 @@ p {
 blockquote {
   border-left: 2rem solid $yellow;
 }
+
+.text-shadow-sm {
+  text-shadow: -1px 1px 0 $lessblack;
+}
