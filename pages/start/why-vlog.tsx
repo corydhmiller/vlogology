@@ -1,6 +1,8 @@
 import * as React from 'react';
+import Link from 'next/link';
 import Page from '../../components/Page';
 import CopyBlock from '../../components/ui/CopyBlock';
+import Button from '../../components/ui/Button';
 
 const WhyVlog = () => {
   return (
@@ -84,120 +86,96 @@ const WhyVlog = () => {
           <p>Now back to the present.</p>
         </CopyBlock>
       </div>
-      <div className="row center-xs">
-        <div className="col-xs-12 col-sm-8 col-md-6">
-          <div className="flex-container flex-center margin--l-top">
-            <div className="block">
-              <div className="massive font--bold">
-                It’s easier than ever to{' '}
-                <span className="yellow">publish something online</span>.
-              </div>
-            </div>
-          </div>
+      <div className="max-w-5xl px-4 my-12 ml-auto">
+        <div className="font-bold leading-tight text-screen sm:text-6xl">
+          It’s easier than ever to{' '}
+          <span className="text-yellow-400 text-shadow-sm">
+            publish something online
+          </span>
+          .
         </div>
       </div>
+      <div className="w-full h-8 mb-12 ml-auto bg-yellow-400" />
       <div className="row end-xs">
         <div className="endbar endbar-right margin--l-bottom" />
       </div>
-      <div className="row">
-        <div className="col-xs-12 padding--l">
-          <div className="flex-container flex-center">
-            <div className="block block-copy">
-              <p>
-                It’s now easier than ever to publish something online. All it
-                takes is an idea, some work, and the tap of a button.
-              </p>
+      <CopyBlock>
+        <p>
+          It’s now easier than ever to publish something online. All it takes is
+          an idea, some work, and the tap of a button.
+        </p>
 
-              <p>
-                Even if you’re not interested in <em>publishing</em> anything,
-                it’s certainly easier than ever to <em>make</em> something,
-                especially video.
-              </p>
+        <p>
+          Even if you’re not interested in <em>publishing</em> anything, it’s
+          certainly easier than ever to <em>make</em> something, especially
+          video.
+        </p>
 
-              <h2>But why have a vlog?</h2>
+        <h2>But why have a vlog?</h2>
 
-              <p>
-                It might have seemed to come out of the blue when I told my wife
-                I wanted to start vlogging, but I had actually been thinking
-                about it for some time.
-              </p>
-              <p>
-                The barrier to entry to having a voice has been lowered. The
-                ability to make a movie, a short film, or a documentary has
-                moved from out of reach to completely attainable.
-              </p>
+        <p>
+          It might have seemed to come out of the blue when I told my wife I
+          wanted to start vlogging, but I had actually been thinking about it
+          for some time.
+        </p>
+        <p>
+          The barrier to entry to having a voice has been lowered. The ability
+          to make a movie, a short film, or a documentary has moved from out of
+          reach to completely attainable.
+        </p>
+        <p>
+          Twenty years ago, if you wanted to make some sort of video and have it
+          reach dozens, hundreds, thousands, or even millions of people, you
+          would need thousands of dollars, unbelievably expensive equipment, and
+          some sort of far-reaching network that you probably couldn’t get
+          access to more often than not.
+        </p>
 
-              <p>
-                Twenty years ago, if you wanted to make some sort of video and
-                have it reach dozens, hundreds, thousands, or even millions of
-                people, you would need thousands of dollars, unbelievably
-                expensive equipment, and some sort of far-reaching network that
-                you probably couldn’t get access to more often than not.
-              </p>
+        <p>
+          Nowadays,{' '}
+          <strong>vlogging is literally as easy as tapping a button.</strong>
+        </p>
 
-              <p>
-                Nowadays,{' '}
-                <strong>
-                  vlogging is literally as easy as tapping a button.
-                </strong>
-              </p>
+        <p>People vlog for different reasons:</p>
 
-              <p>People vlog for different reasons:</p>
+        <ul className="mb-4">
+          <li>
+            Some vlog to <strong>document their life and journey.</strong>
+          </li>
+          <li>
+            Some vlog to <strong>share humorous moments and skits.</strong>
+          </li>
+          <li>
+            Some vlog to <strong>inform the world</strong> what is happening in
+            their corner.
+          </li>
+          <li>
+            Some vlog to <strong>build brand awareness and trust.</strong>
+          </li>
+        </ul>
 
-              <ul>
-                <li>
-                  Some vlog to <strong>document their life and journey.</strong>
-                </li>
-                <li>
-                  Some vlog to{' '}
-                  <strong>share humorous moments and skits.</strong>
-                </li>
-                <li>
-                  Some vlog to <strong>inform the world</strong> what is
-                  happening in their corner.
-                </li>
-                <li>
-                  Some vlog to <strong>build brand awareness and trust.</strong>
-                </li>
-              </ul>
+        <p>
+          There are plenty of other reasons to start a vlog, and my goal with
+          Vlogology is to take you from, “I want to, but I don’t know how,” to
+          “yeah, maybe I could do that,” to “I’m going to start tomorrow.”
+        </p>
 
-              <p>
-                There are plenty of other reasons to start a vlog, and my goal
-                with Vlogology is to take you from, “I want to, but I don’t know
-                how,” to “yeah, maybe I could do that,” to “I’m going to start
-                tomorrow.”
-              </p>
-
-              <p>
-                <strong>
-                  Vlogging has been one of the most rewarding things I’ve done
-                  in the last few years,
-                </strong>{' '}
-                and on the next page I’ll share some of the great benefits of
-                starting a vlog.
-              </p>
-            </div>
-          </div>
+        <p>
+          <strong>
+            Vlogging has been one of the most rewarding things I’ve done in the
+            last few years,
+          </strong>{' '}
+          and on the next page I’ll share some of the great benefits of starting
+          a vlog.
+        </p>
+        <div className="text-center">
+          <Link href="/start/the-benefits-of-vlogging/">
+            <a href="/start/the-benefits-of-vlogging/">
+              <Button color="yellow">Continue Reading</Button>
+            </a>
+          </Link>
         </div>
-      </div>
-      <div className="row">
-        <div className="col-xs-12 ">
-          <div className="flex-container flex-center">
-            <div className="block block-copy margin--l-bottom">
-              <div className="text-center">
-                <a
-                  href="/start/the-benefits-of-vlogging/"
-                  alt="Continue Reading"
-                >
-                  <button className="button button--yellow">
-                    Continue Reading
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>{' '}
+      </CopyBlock>
     </Page>
   );
 };
