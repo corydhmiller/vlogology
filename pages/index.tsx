@@ -9,6 +9,7 @@ import SubscribeForm from '../components/SubscribeForm';
 import Blockquote from '../components/ui/Blockquote';
 import Button from '../components/ui/Button';
 import CopyBlock from '../components/ui/CopyBlock';
+import Heading from '../components/ui/Heading';
 
 const Home: React.FunctionComponent<null> = () => {
   return (
@@ -36,9 +37,7 @@ const Home: React.FunctionComponent<null> = () => {
             </div>
             <div className="py-12">
               <CopyBlock>
-                <h2 className="mb-4 text-3xl font-bold border-yellow-400 border-b-sm">
-                  So you want to start a vlog.
-                </h2>
+                <Heading level="h2">So you want to start a vlog.</Heading>
                 <p>Awesome.</p>
                 <p>
                   Vlogging is a fantastic way to document your life, business,
@@ -96,7 +95,7 @@ const Home: React.FunctionComponent<null> = () => {
         </div>
         <div className="pt-12">
           <CopyBlock>
-            <div className="p-2 mx-auto sm:float-left">
+            <div className="p-2 pr-4 mx-auto sm:pl-0 sm:float-left">
               <Image
                 src="/images/cory-miller.png"
                 width="200"
@@ -104,7 +103,7 @@ const Home: React.FunctionComponent<null> = () => {
                 alt="Me, Cory Miller!"
               />
             </div>
-            <p className="font-bold">Hey there! I’m Cory Miller.</p>
+            <Heading level="h2">Hey there! I’m Cory Miller.</Heading>
             <p>
               I started vlogging on a whim. No goal, no direction, and no
               equipment. I just wanted to do this thing people called
@@ -214,9 +213,7 @@ const Home: React.FunctionComponent<null> = () => {
         <div className="w-full h-8 ml-auto bg-yellow-400" />
         <div className="my-12 sm:mt-24">
           <CopyBlock>
-            <h2 className="mb-6 text-3xl font-bold border-yellow-400 border-b-sm">
-              Start Vlogging Without the Headaches
-            </h2>
+            <Heading level="h2">Start Vlogging Without the Headaches</Heading>
             <p>
               This website exists to help you{' '}
               <strong>
@@ -273,10 +270,10 @@ const Home: React.FunctionComponent<null> = () => {
         </div>
         <div className="py-16 text-white bg-black">
           <CopyBlock>
-            <h2 className="mb-4 text-2xl font-semibold border-yellow-400 border-b-sm">
+            <Heading level="h2">
               <span className="text-yellow-400">Get New Lessons</span> Delivered
               To You Every Week
-            </h2>
+            </Heading>
             <p>
               Vlogology is your one-stop shop for{' '}
               <strong>get your vlog off the ground</strong> and build it into

@@ -33,7 +33,8 @@ const WhyVlog = () => {
 
         <p>First, let’s get some definitions clear.</p>
       </CopyBlock>
-      <div className="grid grid-cols-1 sm:grid-cols-2">
+
+      <div className="grid grid-cols-1 mt-16 sm:grid-cols-2">
         <div className="my-8 sm:pr-4 sm:mt-0">
           <div className="p-4 text-right bg-yellow-400 sm:p-12">
             <h2 className="font-serif text-5xl font-semibold">“vlog”</h2>

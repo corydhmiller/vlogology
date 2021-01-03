@@ -323,7 +323,7 @@ module.exports = {
     flexGrow: ['responsive'],
     flexShrink: ['responsive'],
     order: ['responsive'],
-    float: [],
+    float: ['responsive'],
     fontFamily: [],
     fontWeight: [],
     height: ['responsive'],

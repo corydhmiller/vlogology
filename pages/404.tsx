@@ -1,15 +1,16 @@
 import * as React from 'react';
 import Page from '../components/Page';
 import CopyBlock from '../components/ui/CopyBlock';
+import Heading from '../components/ui/Heading';
 
 const WhyVlog: React.FunctionComponent<null> = () => {
   return (
     <Page title="Page not found">
       <CopyBlock>
         <div className="span_8 col center">
-          <h2 className="mb-8 text-4xl font-bold">
+          <Heading level="h2">
             Seems that what you're looking for doesn't exist. Awkward.
-          </h2>
+          </Heading>
           <p className="center">
             You might try heading back to the{' '}
             <a href="https://vlogology.com">main page</a>, or if you think you
