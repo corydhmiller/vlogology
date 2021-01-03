@@ -89,7 +89,7 @@ const Home: React.FunctionComponent<null> = () => {
             </div>
           </div>
         </div>
-        <div className="py-12">
+        <div className="pt-12">
           <CopyBlock>
             <div className="p-2 mx-auto sm:float-left">
               <Image
@@ -148,8 +148,8 @@ const Home: React.FunctionComponent<null> = () => {
             </p>
           </CopyBlock>
         </div>
-        <div className="max-w-5xl px-8 mt-12 ml-auto">
-          <div className="text-lg font-bold sm:text-6xl">
+        <div className="max-w-5xl px-4 my-12 ml-auto">
+          <div className="font-bold leading-tight text-screen sm:text-6xl">
             Vlogs are{' '}
             <span className="text-yellow-400 text-shadow-sm">stories</span>, and
             everyone has a story.
@@ -157,59 +157,57 @@ const Home: React.FunctionComponent<null> = () => {
         </div>
         <div className="w-full h-8 mb-12 ml-auto bg-yellow-400" />
 
-        <div className="p-12">
-          <CopyBlock>
-            <p>
-              When I first started vlogging, I had no idea what I was supposed
-              to record.
-            </p>
-            <p>
-              In fact, <strong>starting was the hardest part.</strong>
-            </p>
-            <p>
-              I claimed I was trying to figure out my style, the kind of content
-              I’d be making, how to get great quality…but actually, I wasn’t
-              really doing anything but procrastinating.
-            </p>
-            <p>Why is it so hard to get started with a vlog?</p>
-            <p>I can think of a number of reasons:</p>
+        <CopyBlock>
+          <p>
+            When I first started vlogging, I had no idea what I was supposed to
+            record.
+          </p>
+          <p>
+            In fact, <strong>starting was the hardest part.</strong>
+          </p>
+          <p>
+            I claimed I was trying to figure out my style, the kind of content
+            I’d be making, how to get great quality…but actually, I wasn’t
+            really doing anything but procrastinating.
+          </p>
+          <p>Why is it so hard to get started with a vlog?</p>
+          <p>I can think of a number of reasons:</p>
 
-            <ul className="mb-4">
-              <li>Lack of confidence</li>
-              <li>Lack of ideas (or too many!)</li>
-              <li>Thinking you need specific gear</li>
-              <li>Thinking you need a specific type of personality</li>
-            </ul>
+          <ul className="mb-4">
+            <li>Lack of confidence</li>
+            <li>Lack of ideas (or too many!)</li>
+            <li>Thinking you need specific gear</li>
+            <li>Thinking you need a specific type of personality</li>
+          </ul>
 
-            <p>
-              I could go on. Seriously, I had to stop myself from writing out
-              dozens more bullet points.
-            </p>
-            <p>That’s what held me back.</p>
-            <p>
-              I was watching video after video, trying to figure out how to
-              match styles of my favorite vloggers.
-            </p>
-            <p>
-              <strong>I had no idea where to even begin.</strong> I had no idea
-              what my goals were, or why I even wanted to get started in the
-              first place.
-            </p>
-            <p>
-              Eventually I did get started. Now here I am, many years later, and
-              the process of vlogging has become part of my weekly routine.
-            </p>
-          </CopyBlock>
-        </div>
+          <p>
+            I could go on. Seriously, I had to stop myself from writing out
+            dozens more bullet points.
+          </p>
+          <p>That’s what held me back.</p>
+          <p>
+            I was watching video after video, trying to figure out how to match
+            styles of my favorite vloggers.
+          </p>
+          <p>
+            <strong>I had no idea where to even begin.</strong> I had no idea
+            what my goals were, or why I even wanted to get started in the first
+            place.
+          </p>
+          <p>
+            Eventually I did get started. Now here I am, many years later, and
+            the process of vlogging has become part of my weekly routine.
+          </p>
+        </CopyBlock>
 
-        <div className="max-w-4xl pt-4 pb-8 mx-auto mt-12">
-          <div className="text-lg font-bold text-center sm:text-6xl">
+        <div className="max-w-4xl px-4 pt-4 pb-8 mx-auto mt-12">
+          <div className="font-bold leading-tight text-center text-screen sm:text-6xl">
             Vlogging doesn’t have to be{' '}
             <span className="text-yellow-400 text-shadow-sm">complicated.</span>
           </div>
         </div>
         <div className="w-full h-8 ml-auto bg-yellow-400" />
-        <div className="my-24">
+        <div className="my-12 sm:mt-24">
           <CopyBlock>
             <h2 className="mb-6 text-3xl font-bold border-yellow-400 border-b-sm">
               Start Vlogging Without the Headaches
