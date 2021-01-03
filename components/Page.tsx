@@ -8,18 +8,31 @@ type PageProps = {
   children: React.ReactNode;
 };
 
-const Page = ({ title, image, children }: PageProps) => {
-  // Handle the sidebar staate from Layout so that we can toggle sidebar from anywhere
+const Page = ({ title, image = 'none', children }: PageProps) => {
+  const conditionalImage = () => {
+    // This is janky af but I don't have the time
+    if (image !== 'none') {
+      return <Image src={image} layout="fill" objectFit="cover" alt="" />;
+    }
+    return '';
+  };
 
   return (
     <Layout title={title}>
-      <div className="relative w-full px-4 py-24 text-center bg-black">
-        <div className="relative z-20 inline-block pb-8 border-yellow-400 border-b-md">
+      <div
+        className={`relative w-full px-4 ${
+          image === 'none' ? 'py-12' : 'py-24 md:py-40'
+        } text-center bg-black`}
+      >
+        <div className="relative z-30 inline-block pb-8 border-yellow-400 border-b-md">
           <h1 className="font-bold leading-tight text-white text-screen sm:text-6xl">
             {title}
           </h1>
         </div>
-        <Image src={image} layout="fill" objectFit="cover" alt="" />
+
+        {conditionalImage()}
+
+        <div className="absolute top-0 left-0 z-20 w-full h-full bg-gradient-to-t from-black" />
       </div>
       <section className="py-12">{children}</section>
     </Layout>

@@ -6,7 +6,7 @@ import Button from '../../components/ui/Button';
 
 const WhyVlog = () => {
   return (
-    <Page title="Why vlog?" image="/images/pages/why-vlog/why-vlog.jpg">
+    <Page title="Why vlog?" image="/images/pages/headers/why-vlog.jpg">
       <CopyBlock>
         <p>
           I remember the first time I told my wife I wanted to start vlogging.
