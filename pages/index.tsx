@@ -1,9 +1,12 @@
 import * as React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+// Components
 import Layout from '../components/Layout';
 import Video from '../components/Video';
 import SubscribeForm from '../components/SubscribeForm';
+// UI
+import Blockquote from '../components/ui/Blockquote';
 import Button from '../components/ui/Button';
 import CopyBlock from '../components/ui/CopyBlock';
 
@@ -59,11 +62,11 @@ const Home: React.FunctionComponent<null> = () => {
                   You’ve sat on your couch thinking about what you’d even try to
                   record, and yet something’s holding you back.
                 </p>
-                <blockquote className="px-4 my-8 text-lg italic font-bold text-gray-500 sm:text-2xl lg:mt-8 lg:mb-16">
+                <Blockquote>
                   “I don’t really have anything
                   <br />
                   worth sharing.” – You, probably
-                </blockquote>
+                </Blockquote>
                 <p>But what if I told you that was untrue?</p>
               </CopyBlock>
             </div>

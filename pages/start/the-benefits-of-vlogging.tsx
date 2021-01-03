@@ -2,6 +2,7 @@ import * as React from 'react';
 import Link from 'next/link';
 import Page from '../../components/Page';
 import CopyBlock from '../../components/ui/CopyBlock';
+import Blockquote from '../../components/ui/Blockquote';
 import Button from '../../components/ui/Button';
 
 const BenefitsOfVlogging = () => {
@@ -51,9 +52,9 @@ const BenefitsOfVlogging = () => {
           trust from their potential customers.
         </p>
 
-        <blockquote>
+        <Blockquote>
           From the moment we are born, we are learning who we can trust.
-        </blockquote>
+        </Blockquote>
 
         <h2 className="mt-8 mb-4 text-3xl font-bold border-yellow-400 border-b-sm">
           2. A vlog gives you something to look back at
