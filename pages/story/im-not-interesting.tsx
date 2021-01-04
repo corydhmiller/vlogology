@@ -108,7 +108,7 @@ const PageContent = () => {
         </p>
 
         <p>Here’s a different question you can ask:</p>
-        <p />
+
         <Blockquote>
           “What can I do to make today interesting for <em>me</em>?”
         </Blockquote>

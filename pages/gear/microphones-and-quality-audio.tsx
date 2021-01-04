@@ -8,7 +8,7 @@ import Button from '../../components/ui/Button';
 import Heading from '../../components/ui/Heading';
 
 const PageContent = () => {
-  const nextPage = '/gear/microphones-and-quality-audio/';
+  const nextPage = '/gear/cameras-commonly-used-by-vloggers';
 
   return (
     <Page
