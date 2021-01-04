@@ -212,7 +212,7 @@ const PageContent = () => {
         </p>
       </CopyBlock>
 
-      <div className="pt-12 pb-24 mb-12 text-center bg-black">
+      <div className="pt-12 pb-24 mt-24 mb-12 text-center bg-black">
         <Heading level="h2" classes="text-white">
           My first vlog
         </Heading>
