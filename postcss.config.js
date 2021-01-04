@@ -17,9 +17,9 @@ module.exports = {
         './components/**/*.{js,jsx,ts,tsx}'
       ],
       defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || []
-    },
-    cssnano: {
-      preset: 'default'
     }
+    // cssnano: {
+    //   preset: 'default'
+    // }
   }
 };

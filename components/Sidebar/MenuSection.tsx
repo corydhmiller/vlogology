@@ -58,8 +58,11 @@ MenuSection.propTypes = {
 
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  activeMenu: PropTypes.string.isRequired,
+  activeMenu: PropTypes.string,
   setActiveMenu: PropTypes.func.isRequired
+};
+MenuSection.defaultProps = {
+  activeMenu: null
 };
 
 export default MenuSection;
