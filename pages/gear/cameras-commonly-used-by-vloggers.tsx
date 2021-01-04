@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Page from '../../components/Page';
 // UI
 import CopyBlock from '../../components/ui/CopyBlock';
@@ -69,8 +69,7 @@ const PageContent = () => {
 
         <Heading level="h3">Sony RX100</Heading>
 
-        <Image
-          layout="responsive"
+        <img
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/sony-rx100-miv.jpg"
@@ -124,8 +123,7 @@ const PageContent = () => {
 
         <Heading level="h3">Canon G7X Series</Heading>
 
-        <Image
-          layout="responsive"
+        <img
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/canon-g7x-mii.jpg"
@@ -203,16 +201,15 @@ const PageContent = () => {
 
         <p>
           Another thing to keep in mind when getting cameras with swappable
-          lenses is to make sure the lenses you're buying fit the camera and
-          sensor. I won't go into all of the technical details here, but just
+          lenses is to make sure the lenses you’re buying fit the camera and
+          sensor. I won’t go into all of the technical details here, but just
           make sure any lens you buy works with the camera you have before
           purchasing it.
         </p>
 
         <Heading level="h3">Canon M50</Heading>
 
-        <Image
-          layout="responsive"
+        <img
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/canon-m50.jpg"
@@ -232,7 +229,7 @@ const PageContent = () => {
         </p>
 
         <p>
-          If high resolution video isn't your thing right now, you might be
+          If high resolution video isn’t your thing right now, you might be
           interested in the image stabilization or the revolving screen, or
           simply the fact that you can have multiple lenses for different
           settings.
@@ -252,8 +249,7 @@ const PageContent = () => {
 
         <Heading level="h3">Canon 80d</Heading>
 
-        <Image
-          layout="responsive"
+        <img
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/canon-80d.jpg"
@@ -275,7 +271,7 @@ const PageContent = () => {
 
         <p>
           The Canon 80d shoots in 1080p and has incredible autofocus, so you
-          won't have to worry too much about the settings while you're vlogging
+          won’t have to worry too much about the settings while you’re vlogging
           on the go. A great option for the mid-range vlogging category.
         </p>
 
@@ -294,27 +290,26 @@ const PageContent = () => {
         <Heading level="h2">High-End Cameras</Heading>
 
         <p>
-          Now we enter the world of full-frame and "wow how did they pack so
-          many features in there" cameras. These higher-end cameras are truly a
-          class of their own. You'll find a lot of tech and outdoor vloggers
+          Now we enter the world of full-frame and “wow how did they pack so
+          many features in there” cameras. These higher-end cameras are truly a
+          class of their own. You’ll find a lot of tech and outdoor vloggers
           using these because of their incredible versatility and quality.
         </p>
 
         <p>
-          Many of the cameras you'd find in this category are top-tier and
+          Many of the cameras you’d find in this category are top-tier and
           provide you with an expanse of options: great autofocus, swappable
           lenses, 4K, multiple frame rates, weatherproofing, and more.
         </p>
 
         <p>
           If you really want to move your vlog into the next level of quality
-          and aren't too worried about the investment, these are great options.
+          and aren’t too worried about the investment, these are great options.
         </p>
 
         <Heading level="h3">Panasonic Lumix GH5</Heading>
 
-        <Image
-          layout="responsive"
+        <img
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/panasonic-lumix-gh5.jpg"
@@ -331,13 +326,13 @@ const PageContent = () => {
           The GH5 packs a punch with its impressively large number of features:
           4K resolution, in-body image stabilization, advanced autofocus,
           multiple levels of high frame rates, and a huge amount of features
-          that wouldn't fit here.
+          that wouldn’t fit here.
         </p>
 
         <p>
-          There's a lot going for the GH5, and it is certainly top of its class.
-          The type of content I've seen produced on this camera varies from
-          "talking head" videos in an office to jaw-dropping slackline adventure
+          There’s a lot going for the GH5, and it is certainly top of its class.
+          The type of content I’ve seen produced on this camera varies from
+          “talking head” videos in an office to jaw-dropping slackline adventure
           videos. This can certainly be your one-and-only if you wanted it to
           be.
         </p>
@@ -356,8 +351,7 @@ const PageContent = () => {
 
         <Heading level="h3">Sony A7S series</Heading>
 
-        <Image
-          layout="responsive"
+        <img
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/sony-a7s-ii.jpg"
@@ -384,9 +378,9 @@ const PageContent = () => {
 
         <p>
           The primary feature of this camera, as mentioned before, is the light
-          capability. Sometimes you want to take your camera outside and you've
+          capability. Sometimes you want to take your camera outside and you’ve
           obviously got plenty of light, but other times you might want to film
-          later in the evening or inside when it's not as bright. The A7s series
+          later in the evening or inside when it’s not as bright. The A7s series
           is perfect for this type of versatility.
         </p>
 

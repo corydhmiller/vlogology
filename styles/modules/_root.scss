@@ -57,6 +57,7 @@ li {
 
 input,
 textarea {
+  border-radius: 0;
   -webkit-border-radius: 0;
 
   @include transition($ease);

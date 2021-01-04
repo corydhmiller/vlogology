@@ -1,7 +1,18 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Image from 'next/image';
+// import Image from 'next/image';
+import styled from 'styled-components';
 import Layout from './Layout';
+
+const HeaderImage = styled.img`
+  object-fit: cover;
+  object-position: center center;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+`;
 
 const Page = ({ ...props }) => {
   const { title, image, children } = props;
@@ -9,7 +20,7 @@ const Page = ({ ...props }) => {
   const conditionalImage = () => {
     // This is janky af but I don't have the time
     if (image) {
-      return <Image src={image} layout="fill" objectFit="cover" alt="" />;
+      return <HeaderImage src={image} alt="" />;
     }
     return '';
   };

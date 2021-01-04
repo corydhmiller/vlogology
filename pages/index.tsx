@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 // Components
 import Layout from '../components/Layout';
@@ -96,7 +96,7 @@ const Home: React.FunctionComponent<null> = () => {
         <div className="pt-12">
           <CopyBlock>
             <div className="p-2 pr-4 mx-auto sm:pl-0 sm:float-left">
-              <Image
+              <img
                 src="/images/cory-miller.png"
                 width="200"
                 height="200"
@@ -247,7 +247,7 @@ const Home: React.FunctionComponent<null> = () => {
             <h2 className="mb-4 text-2xl font-semibold serif">
               You just have to start…
             </h2>
-            <Image
+            <img
               src="/images/pages/home/episode1-before.jpg"
               width={1920}
               height={1073}
@@ -259,7 +259,7 @@ const Home: React.FunctionComponent<null> = () => {
               <h2 className="mb-4 text-2xl font-semibold serif">
                 …and improve as you go.
               </h2>
-              <Image
+              <img
                 src="/images/pages/home/episode118-after.jpg"
                 width={1920}
                 height={1073}

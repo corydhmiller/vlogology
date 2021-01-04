@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "yarn css:prod && next build",
+    "build": "yarn css:prod && next build && next export",
     "start": "next start",
     "tailwind": "tailwind build styles/tailwind.src.css -c tailwind.config.js -o styles/tailwind.css",
     "css": "yarn tailwind",
@@ -19,6 +19,7 @@
     "autoprefixer": "^10.1.0",
     "convertkit-react": "^1.4.2",
     "cssnano": "^4.1.10",
+    "netlify-plugin-cache-nextjs": "^1.5.2",
     "next": "^10.0.0",
     "postcss": "^8.2.2",
     "postcss-cli": "^8.3.1",
