@@ -131,7 +131,7 @@ const Home: React.FunctionComponent<null> = () => {
               of what I do, and the personal benefits have been incredible.
             </p>
             <p>
-              I've lived all around the world with my wife and two daughters,
+              I’ve lived all around the world with my wife and two daughters,
               and I have a{' '}
               <a
                 href="https://youtube.com/corydhmiller"

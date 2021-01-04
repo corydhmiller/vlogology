@@ -15,7 +15,7 @@ const HeaderImage = styled.img`
 `;
 
 const Page = ({ ...props }) => {
-  const { title, image, children } = props;
+  const { title, description, image, children } = props;
 
   const conditionalImage = () => {
     // This is janky af but I don't have the time
@@ -26,7 +26,7 @@ const Page = ({ ...props }) => {
   };
 
   return (
-    <Layout title={title}>
+    <Layout title={title} description={description}>
       <div
         className={`relative w-full px-4 ${
           image === 'none' ? 'py-12' : 'py-24 md:py-40'
@@ -54,12 +54,14 @@ const Page = ({ ...props }) => {
 
 Page.propTypes = {
   title: PropTypes.string.isRequired,
+  description: PropTypes.string,
   image: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   children: PropTypes.node.isRequired
 };
 
 Page.defaultProps = {
-  image: false
+  image: false,
+  description: undefined
 };
 
 export default Page;

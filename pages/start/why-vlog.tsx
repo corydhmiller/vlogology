@@ -10,7 +10,13 @@ const PageContent = () => {
   const nextPage = '/start/the-benefits-of-vlogging/';
 
   return (
-    <Page title="Why vlog?" image="/images/pages/headers/why-vlog.jpg">
+    <Page
+      title="Why vlog?"
+      image="/images/pages/headers/why-vlog.jpg"
+      description="It’s now easier than ever to publish something online. All it takes is an idea, some work, and the tap of a button.
+
+    Even if you’re not interested in publishing anything, it’s certainly easier than ever to make something, especially video."
+    >
       <CopyBlock>
         <p>
           I remember the first time I told my wife I wanted to start vlogging.
