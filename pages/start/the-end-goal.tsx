@@ -6,7 +6,7 @@ import Blockquote from '../../components/ui/Blockquote';
 import Button from '../../components/ui/Button';
 import Heading from '../../components/ui/Heading';
 
-const TheEndGoal = () => {
+const PageContent = () => {
   const nextPage = '/start/if-nothing-else-read-this-tldr';
 
   return (
@@ -80,7 +80,7 @@ const TheEndGoal = () => {
           </strong>
         </p>
 
-        <div className="text-center mt-4">
+        <div className="mt-4 text-center">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
@@ -92,4 +92,4 @@ const TheEndGoal = () => {
   );
 };
 
-export default TheEndGoal;
+export default PageContent;

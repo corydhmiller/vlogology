@@ -6,7 +6,7 @@ import CopyBlock from '../../components/ui/CopyBlock';
 import Button from '../../components/ui/Button';
 import Massive from '../../components/ui/Massive';
 
-const WhyVlog = () => {
+const PageContent = () => {
   const nextPage = '/start/the-benefits-of-vlogging/';
 
   return (
@@ -169,7 +169,7 @@ const WhyVlog = () => {
           and on the next page I’ll share some of the great benefits of starting
           a vlog.
         </p>
-        <div className="text-center mt-4">
+        <div className="mt-4 text-center">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
@@ -181,4 +181,4 @@ const WhyVlog = () => {
   );
 };
 
-export default WhyVlog;
+export default PageContent;

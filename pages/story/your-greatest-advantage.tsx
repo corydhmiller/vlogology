@@ -6,7 +6,7 @@ import CopyBlock from '../../components/ui/CopyBlock';
 import Button from '../../components/ui/Button';
 import Massive from '../../components/ui/Massive';
 
-const YourGreatestAdvantage = () => {
+const PageContent = () => {
   const nextPage = '/story/im-not-interesting';
 
   return (
@@ -124,4 +124,4 @@ const YourGreatestAdvantage = () => {
   );
 };
 
-export default YourGreatestAdvantage;
+export default PageContent;

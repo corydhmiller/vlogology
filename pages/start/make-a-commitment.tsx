@@ -6,7 +6,7 @@ import Blockquote from '../../components/ui/Blockquote';
 import Button from '../../components/ui/Button';
 import Massive from '../../components/ui/Massive';
 
-const MakeACommitment = () => {
+const PageContent = () => {
   const nextPage = '/start/the-end-goal';
 
   return (
@@ -190,7 +190,7 @@ const MakeACommitment = () => {
           toward something.
         </p>
 
-        <div className="text-center mt-4">
+        <div className="mt-4 text-center">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
@@ -202,4 +202,4 @@ const MakeACommitment = () => {
   );
 };
 
-export default MakeACommitment;
+export default PageContent;

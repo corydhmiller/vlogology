@@ -4,11 +4,9 @@ import Page from '../../components/Page';
 // UI
 import CopyBlock from '../../components/ui/CopyBlock';
 import Button from '../../components/ui/Button';
-import Massive from '../../components/ui/Massive';
 import Heading from '../../components/ui/Heading';
-import Blockquote from '../../components/ui/Blockquote';
 
-const YourGreatestAdvantage = () => {
+const PageContent = () => {
   const nextPage = '/story/the-rubber-duck-technique/';
 
   return (
@@ -20,7 +18,7 @@ const YourGreatestAdvantage = () => {
         <p>
           One of the hardest things to overcome can be to get in front of a
           camera and hit the record button. Some people thrive in the
-          "spotlight", while others have no desire to be front and center.
+          “spotlight”, while others have no desire to be front and center.
         </p>
 
         <p>
@@ -165,4 +163,4 @@ const YourGreatestAdvantage = () => {
   );
 };
 
-export default YourGreatestAdvantage;
+export default PageContent;

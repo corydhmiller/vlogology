@@ -7,7 +7,7 @@ import Button from '../../components/ui/Button';
 import Heading from '../../components/ui/Heading';
 import Blockquote from '../../components/ui/Blockquote';
 
-const YourGreatestAdvantage = () => {
+const PageContent = () => {
   const nextPage = '/story/getting-in-front-of-the-camera/';
 
   return (
@@ -300,4 +300,4 @@ const YourGreatestAdvantage = () => {
   );
 };
 
-export default YourGreatestAdvantage;
+export default PageContent;

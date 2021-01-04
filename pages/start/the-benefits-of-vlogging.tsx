@@ -7,7 +7,7 @@ import Button from '../../components/ui/Button';
 import Massive from '../../components/ui/Massive';
 import Heading from '../../components/ui/Heading';
 
-const BenefitsOfVlogging = () => {
+const PageContent = () => {
   const nextPage = '/start/misconceptions-about-vlogging';
 
   return (
@@ -213,7 +213,7 @@ const BenefitsOfVlogging = () => {
           Next up I want to address some misconceptions about vlogging and why
           there’s no reason you can’t start vlogging <em>today</em>.
         </p>
-        <div className="text-center mt-4">
+        <div className="mt-4 text-center">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
@@ -225,4 +225,4 @@ const BenefitsOfVlogging = () => {
   );
 };
 
-export default BenefitsOfVlogging;
+export default PageContent;

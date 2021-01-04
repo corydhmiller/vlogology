@@ -7,7 +7,7 @@ import Button from '../../components/ui/Button';
 import Massive from '../../components/ui/Massive';
 import Heading from '../../components/ui/Heading';
 
-const MisconceptionsAboutVlogging = () => {
+const PageContent = () => {
   const nextPage = '/start/make-a-commitment';
 
   return (
@@ -209,7 +209,7 @@ const MisconceptionsAboutVlogging = () => {
           Next up I want to talk about commitment and why you need to commit to
           something sooner rather than later.
         </p>
-        <div className="text-center mt-4">
+        <div className="mt-4 text-center">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
@@ -221,4 +221,4 @@ const MisconceptionsAboutVlogging = () => {
   );
 };
 
-export default MisconceptionsAboutVlogging;
+export default PageContent;

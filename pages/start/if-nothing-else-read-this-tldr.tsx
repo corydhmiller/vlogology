@@ -5,7 +5,7 @@ import CopyBlock from '../../components/ui/CopyBlock';
 import Button from '../../components/ui/Button';
 import Massive from '../../components/ui/Massive';
 
-const IfNothingElse = () => {
+const PageContent = () => {
   const nextPage = '/story/your-greatest-advantage';
 
   return (
@@ -47,7 +47,7 @@ const IfNothingElse = () => {
         <p>You can do it. You can make a great vlog.</p>
         <p>You just have to actually get started.</p>
 
-        <div className="text-center mt-4">
+        <div className="mt-4 text-center">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
@@ -59,4 +59,4 @@ const IfNothingElse = () => {
   );
 };
 
-export default IfNothingElse;
+export default PageContent;

@@ -8,7 +8,7 @@ import Massive from '../../components/ui/Massive';
 import Heading from '../../components/ui/Heading';
 import Blockquote from '../../components/ui/Blockquote';
 
-const YourGreatestAdvantage = () => {
+const PageContent = () => {
   const nextPage = '/story/telling-your-story/';
 
   return (
@@ -157,4 +157,4 @@ const YourGreatestAdvantage = () => {
   );
 };
 
-export default YourGreatestAdvantage;
+export default PageContent;
