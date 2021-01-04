@@ -45,10 +45,11 @@ ul {
 li {
   line-height: 150%;
   padding-left: 1rem;
+  margin-bottom: 0.35rem;
 
   &:before {
     content: '•';
-    color: $yellow;
+    color: $black;
     margin-right: 0.35rem;
   }
 }

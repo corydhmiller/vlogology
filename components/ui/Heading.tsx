@@ -2,12 +2,16 @@ import * as React from 'react';
 import PropTypes from 'prop-types';
 
 const Heading = ({ ...props }) => {
-  const { children, level } = props;
+  const { children, level, classes } = props;
 
   switch (level) {
     case 'h2':
       return (
-        <h2 className="inline-block my-8 text-3xl font-bold border-yellow-400 border-b-sm">
+        <h2
+          className={`inline-block my-8 text-3xl font-bold border-yellow-400 border-b-sm${
+            classes ? ` ${classes}` : ''
+          }`}
+        >
           {children}
         </h2>
       );
@@ -23,7 +27,11 @@ const Heading = ({ ...props }) => {
 };
 
 Heading.propTypes = {
-  level: PropTypes.string.isRequired
+  level: PropTypes.string.isRequired,
+  classes: PropTypes.string
+};
+Heading.defaultProps = {
+  classes: ''
 };
 
 export default Heading;
