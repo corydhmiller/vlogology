@@ -120,25 +120,23 @@ const PageContent = () => {
           </div>
           <CopyBlock>
             <Heading level="h2">Sony RX100 Mark IV</Heading>
-            <div className="block block-copy">
-              <p>
-                The{' '}
-                <a
-                  href="https://amzn.to/2HyPv1n"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Sony RX100 Mark 4
-                </a>{' '}
-                is the camera I go for when I want high frame rate shots or when
-                I want to be a little less conspicuous.
-              </p>
-              <p>
-                It has some great features that I’ve come to love, including a
-                high framerate option that allows me to get some super smooth
-                slow-motion shots if I want them.
-              </p>
-            </div>
+            <p>
+              The{' '}
+              <a
+                href="https://amzn.to/2HyPv1n"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sony RX100 Mark 4
+              </a>{' '}
+              is the camera I go for when I want high frame rate shots or when I
+              want to be a little less conspicuous.
+            </p>
+            <p>
+              It has some great features that I’ve come to love, including a
+              high framerate option that allows me to get some super smooth
+              slow-motion shots if I want them.
+            </p>
           </CopyBlock>
           <div className="px-5 pt-8 sm:px-8 sm:py-12">
             <Image
