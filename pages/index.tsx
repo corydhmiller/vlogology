@@ -153,7 +153,7 @@ const Home: React.FunctionComponent<null> = () => {
           </CopyBlock>
         </div>
         <div className="max-w-5xl px-4 my-12 ml-auto">
-          <div className="font-bold leading-tight text-screen sm:text-6xl">
+          <div className="font-bold leading-tight text-screen sm:text-7xl">
             Vlogs are{' '}
             <span className="text-yellow-400 text-shadow-sm">stories</span>, and
             everyone has a story.
@@ -205,7 +205,7 @@ const Home: React.FunctionComponent<null> = () => {
         </CopyBlock>
 
         <div className="max-w-4xl px-4 pt-4 pb-8 mx-auto mt-12">
-          <div className="font-bold leading-tight text-center text-screen sm:text-6xl">
+          <div className="font-bold leading-tight text-center text-screen sm:text-7xl">
             Vlogging doesn’t have to be{' '}
             <span className="text-yellow-400 text-shadow-sm">complicated.</span>
           </div>
