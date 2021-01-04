@@ -80,7 +80,7 @@ const PageContent = () => {
           </strong>
         </p>
 
-        <div className="mt-4 text-center">
+        <div className="mt-8 text-center">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>

@@ -209,7 +209,7 @@ const PageContent = () => {
           Next up I want to talk about commitment and why you need to commit to
           something sooner rather than later.
         </p>
-        <div className="mt-4 text-center">
+        <div className="mt-8 text-center">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
