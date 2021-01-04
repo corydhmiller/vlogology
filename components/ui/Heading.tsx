@@ -16,6 +16,17 @@ const Heading = ({ ...props }) => {
         </h2>
       );
       break;
+    case 'h3':
+      return (
+        <h3
+          className={`inline-block my-3 text-2xl font-bold${
+            classes ? ` ${classes}` : ''
+          }`}
+        >
+          {children}
+        </h3>
+      );
+      break;
     default:
       return (
         <h2 className="inline-block mt-8 mb-4 text-3xl font-bold border-yellow-400 border-b-sm">
