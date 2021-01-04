@@ -80,7 +80,7 @@ const TheEndGoal = () => {
           </strong>
         </p>
 
-        <div className="text-center">
+        <div className="text-center mt-4">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>

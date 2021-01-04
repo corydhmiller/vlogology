@@ -47,7 +47,7 @@ const IfNothingElse = () => {
         <p>You can do it. You can make a great vlog.</p>
         <p>You just have to actually get started.</p>
 
-        <div className="text-center">
+        <div className="text-center mt-4">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>

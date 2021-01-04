@@ -169,7 +169,7 @@ const WhyVlog = () => {
           and on the next page I’ll share some of the great benefits of starting
           a vlog.
         </p>
-        <div className="text-center">
+        <div className="text-center mt-4">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>

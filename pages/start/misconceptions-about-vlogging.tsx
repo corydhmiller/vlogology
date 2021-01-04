@@ -209,7 +209,7 @@ const MisconceptionsAboutVlogging = () => {
           Next up I want to talk about commitment and why you need to commit to
           something sooner rather than later.
         </p>
-        <div className="text-center">
+        <div className="text-center mt-4">
           <Link href={nextPage}>
             <a href={nextPage}>
               <Button color="yellow">Continue Reading</Button>
