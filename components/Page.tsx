@@ -32,6 +32,11 @@ const Page = ({ ...props }) => {
         <div className="absolute top-0 left-0 z-20 w-full h-full bg-gradient-to-t from-black" />
       </div>
       <section className="py-12">{children}</section>
+      <footer className="mt-12">
+        <div className="w-full h-full p-8 text-xs text-gray-500 bg-gray-200">
+          Vlogology &copy; {new Date().getFullYear()}
+        </div>
+      </footer>
     </Layout>
   );
 };
