@@ -75,7 +75,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Source Sans Pro', 'sans-serif'],
-      serif: ['Lora', 'serif']
+      serif: ['"Lora"', 'serif']
     },
     fontWeight: {
       light: '300',

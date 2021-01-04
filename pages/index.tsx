@@ -35,7 +35,7 @@ const Home: React.FunctionComponent<null> = () => {
                 </p>
               </CopyBlock>
             </div>
-            <div className="py-12">
+            <div className="pt-4 pb-12">
               <CopyBlock>
                 <Heading level="h2">So you want to start a vlog.</Heading>
                 <p>Awesome.</p>
