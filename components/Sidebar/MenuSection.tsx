@@ -1,21 +1,11 @@
 import * as React from 'react';
+import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import styles from '../../styles/modules/sidebar.module.scss';
 
-// Declare types for the menu section
-type MenuSectionTypes = {
-  title: string;
-  children: React.ReactNode;
-  activeMenu: any;
-  setActiveMenu: any;
-};
 // MenuSection refers to the clickable Title and following list of links
-const MenuSection = ({
-  title,
-  children,
-  activeMenu,
-  setActiveMenu
-}: MenuSectionTypes) => {
+const MenuSection = ({ ...props }) => {
+  const { title, children, activeMenu, setActiveMenu } = props;
   // Handle the click from the main menu element. This is super WIP
 
   const router = useRouter();
@@ -61,6 +51,15 @@ const MenuSection = ({
       </div>
     </div>
   );
+};
+
+MenuSection.propTypes = {
+  // Declare types for the menu section
+
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  activeMenu: PropTypes.string.isRequired,
+  setActiveMenu: PropTypes.func.isRequired
 };
 
 export default MenuSection;
