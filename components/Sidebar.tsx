@@ -107,7 +107,10 @@ const Sidebar = ({ ...props }) => {
               link="/gear/the-best-camera-for-vlogging"
               content="The best camera"
             />
-            <MenuLink link="/gear/used-vs-new-gear" content="vs.new gear" />
+            <MenuLink
+              link="/gear/used-vs-new-gear"
+              content="Used vs. new gear"
+            />
             <MenuLink
               link="/gear/microphones-and-quality-audio"
               content="Microphones and quality audio"

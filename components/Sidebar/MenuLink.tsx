@@ -15,7 +15,7 @@ const MenuLink = ({ link, content }: MenuLinkTypes) => {
   // <MenuLink link="URL">CONTENT OF LINK</MenuLink>
   // May want to make that simpler and instead of using { children }
   return (
-    <li className={`${styles.link} pl-2 pb-2 pt-1 leading-tight relative`}>
+    <li className={`${styles.link} pl-2 pb-0 pt-1 mb-0 leading-tight relative`}>
       <Link href={link}>
         <a
           className={`hover:bg-gray-500 text-white no-underline font-normal${

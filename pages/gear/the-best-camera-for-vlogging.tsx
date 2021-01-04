@@ -11,7 +11,7 @@ import Heading from '../../components/ui/Heading';
 import Massive from '../../components/ui/Massive';
 
 const PageContent = () => {
-  const nextPage = '/gear/the-best-camera-for-vlogging/';
+  const nextPage = '/gear/used-vs-new-gear/';
 
   return (
     <Page
@@ -76,11 +76,11 @@ const PageContent = () => {
           best camera is <em>any</em> camera you can use to tell your story.
         </p>
       </CopyBlock>
-      <div className="py-12 text-white bg-black">
+      <div className="py-12 my-12 text-white bg-black">
         <CopyBlock />
 
         <div className="grid max-w-4xl grid-cols-1 gap-6 mx-auto sm:grid-cols-2">
-          <div className="px-8 pt-8 sm:py-12">
+          <div className="px-5 pt-8 sm:px-8 sm:py-12">
             <Image
               src="/images/SonyA7II.jpg"
               width={660}
@@ -110,7 +110,7 @@ const PageContent = () => {
               and now it’s what I use.
             </p>
           </CopyBlock>
-          <div className="px-8 pt-8 sm:py-12">
+          <div className="px-5 pt-8 sm:px-8 sm:py-12">
             <Image
               src="/images/RX100m3.jpg"
               width={660}
@@ -140,7 +140,7 @@ const PageContent = () => {
               </p>
             </div>
           </CopyBlock>
-          <div className="px-8 pt-8 sm:py-12">
+          <div className="px-5 pt-8 sm:px-8 sm:py-12">
             <Image
               src="/images/iPhone.jpg"
               width={660}
