@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Image from '../../components/ui/Image';
 import Page from '../../components/Page';
 import SubscribeForm from '../../components/SubscribeForm';
 // UI

@@ -9,8 +9,6 @@ import '../styles/tailwind.css';
 // Overriding styles until everything can be converted to Tailwind.
 import '../styles/styles.scss';
 
-import '../public/font/fonts.css';
-
 function VlogologyApp({ Component, pageProps }: AppProps) {
   const router = useRouter();
 

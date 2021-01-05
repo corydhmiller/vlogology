@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Link from 'next/link';
-import Image from '../../components/ui/Image';
 import Page from '../../components/Page';
 // UI
 import CopyBlock from '../../components/ui/CopyBlock';

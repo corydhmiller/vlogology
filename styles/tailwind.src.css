@@ -5,6 +5,59 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Lora';
+  src: url('../public/font/Lora/Lora-Regular.ttf');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('../public/font/Lora/Lora-Italic.ttf');
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('../public/font/Lora/Lora-SemiBold.ttf');
+  font-weight: semibold;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lora';
+  src: url('../public/font/Lora/Lora-Bold.ttf');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../public/font/SourceSansPro/SourceSansPro-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../public/font/SourceSansPro/SourceSansPro-Italic.ttf');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../public/font/SourceSansPro/SourceSansPro-SemiBold.ttf');
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../public/font/SourceSansPro/SourceSansPro-Bold.ttf');
+  font-weight: 700;
+  font-display: swap;
+}
+
 /* Set up colors */
 :root {
   --black: hsl(240, 5%, 15%);
