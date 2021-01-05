@@ -12,7 +12,6 @@ $sidebarWidth: 350px;
   // }
   &_open {
     transform: translateX(0);
-    box-shadow: 3px 3px 63px #1a0d39;
   }
   & li {
     &:before {

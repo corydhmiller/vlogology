@@ -1,20 +1,22 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
 
 import styles from '../styles/modules/sidebar.module.scss';
-import LogoImg from '../public/images/logo.svg';
 
 import MenuLink from './Sidebar/MenuLink';
 import MenuSection from './Sidebar/MenuSection';
 
-// UI
-import Button from './ui/Button';
-
 const Sidebar = ({ ...props }) => {
   const { sidebarIsOpen, toggleSidebar } = props;
   const [activeMenu, setActiveMenu] = React.useState();
-
+  const handleCloseKeyup = (event: KeyboardEvent) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      toggleSidebar();
+    }
+  };
+  const handleCloseKeydown = (event: React.BaseSyntheticEvent) => {
+    event.preventDefault();
+  };
   return (
     <aside
       id="sidebar"
@@ -27,9 +29,15 @@ const Sidebar = ({ ...props }) => {
     >
       <div className={styles.close}>
         <div className={styles.menu__button}>
-          <Button onClick={toggleSidebar} onKeyUp={toggleSidebar}>
+          <button
+            type="button"
+            className="px-2 font-semibold text-white transition-all duration-200 rounded-full hover:bg-yellow-400 hover:text-black"
+            onClick={toggleSidebar}
+            onKeyUp={handleCloseKeyup}
+            onKeyDown={handleCloseKeydown}
+          >
             Close
-          </Button>
+          </button>
         </div>
       </div>
 

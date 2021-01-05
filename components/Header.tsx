@@ -3,11 +3,19 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import styles from '../styles/modules/header.module.scss';
 import LogoImg from '../public/images/logo.svg';
-// UI
-import Button from './ui/Button';
 
 const Header = ({ ...props }) => {
   const { toggleSidebar } = props;
+
+  const handleCloseKeyup = (event: KeyboardEvent) => {
+    console.log(event);
+    if (event.key === 'Enter' || event.key === ' ') {
+      toggleSidebar();
+    }
+  };
+  const handleCloseKeydown = (event: React.BaseSyntheticEvent) => {
+    event.preventDefault();
+  };
 
   return (
     <header
@@ -18,7 +26,8 @@ const Header = ({ ...props }) => {
           <button
             className="px-2 font-semibold text-white transition-all duration-200 rounded-full hover:bg-yellow-400 hover:text-black"
             onClick={toggleSidebar}
-            onKeyUp={toggleSidebar}
+            onKeyUp={handleCloseKeyup}
+            onKeyDown={handleCloseKeydown}
             type="button"
           >
             Menu

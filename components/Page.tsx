@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Layout from './Layout';
 
 const Page = ({ ...props }) => {
-  const { title, description, image, children } = props;
+  const { title, description, children } = props;
 
   return (
     <Layout title={title} description={description}>
@@ -31,12 +31,10 @@ const Page = ({ ...props }) => {
 Page.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
-  image: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
   children: PropTypes.node.isRequired
 };
 
 Page.defaultProps = {
-  image: false,
   description: undefined
 };
 
