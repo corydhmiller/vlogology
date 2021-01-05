@@ -2,35 +2,23 @@
 @import '../modules/mixins';
 @import '../modules/colors';
 
-$sidebarWidth: 250px;
+$sidebarWidth: 350px;
 
 .sidebar {
   width: $sidebarWidth;
   transition: 0.5s all;
-  @media screen and (max-width: $grid-breakpoint-l - 1px) {
-    transform: translateX(-250px);
-  }
+  transform: translateX(-350px);
+  // @media screen and (max-width: $grid-breakpoint-l - 1px) {
+  // }
   &_open {
     transform: translateX(0);
+    box-shadow: 3px 3px 63px #1a0d39;
   }
   & li {
     &:before {
       display: none;
     }
   }
-}
-
-.logo {
-  justify-content: center;
-  display: none;
-  margin-top: 1rem;
-
-  @include screen--l {
-    display: flex;
-  }
-}
-.image {
-  width: 7rem;
 }
 
 .nav {
@@ -43,10 +31,6 @@ $sidebarWidth: 250px;
 
 .close {
   margin: 1rem 0.75rem 0;
-
-  @include screen--l {
-    display: none;
-  }
 }
 
 .footer {

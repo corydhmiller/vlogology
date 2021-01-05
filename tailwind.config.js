@@ -17,6 +17,11 @@ module.exports = {
       darkred: '#d5443c',
       green: '#5dd961',
       blue: '#5bcaeb',
+      purple: {
+        400: '#4E2ECF',
+        600: '#1A0D39',
+        700: '#140C1F'
+      },
 
       yellow: {
         300: '#fced65',

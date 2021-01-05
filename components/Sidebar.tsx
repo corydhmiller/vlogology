@@ -18,9 +18,10 @@ const Sidebar = ({ ...props }) => {
   return (
     <aside
       id="sidebar"
+      style={{ backgroundColor: '#1c142e' }}
       className={`${
         styles.sidebar
-      } flex flex-col bg-gray-800 z-50 text-white fixed overflow-y-scroll top-0 h-screen ${
+      } flex flex-col  z-50 text-white fixed overflow-y-scroll top-0 h-screen ${
         sidebarIsOpen ? styles.sidebar_open : ''
       }`}
     >
@@ -31,15 +32,7 @@ const Sidebar = ({ ...props }) => {
           </Button>
         </div>
       </div>
-      <div className={styles.logo}>
-        <div className={styles.image}>
-          <Link href="/">
-            <a href="/">
-              <LogoImg />
-            </a>
-          </Link>
-        </div>
-      </div>
+
       <nav>
         <div className={`${styles.nav} mt-4`}>
           <MenuSection

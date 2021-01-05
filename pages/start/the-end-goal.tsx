@@ -10,10 +10,7 @@ const PageContent = () => {
   const nextPage = '/start/if-nothing-else-read-this-tldr';
 
   return (
-    <Page
-      title="The end goal"
-      image="/images/pages/headers/if-nothing-else-read-this-tldr.jpg"
-    >
+    <Page title="The end goal" image="/images/pages/headers/the-end-goal.jpg">
       <CopyBlock>
         <p>
           You’re interested in vlogging. You’ve heard a lot of great things

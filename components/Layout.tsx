@@ -4,7 +4,6 @@ import Head from 'next/head';
 
 import Header from './Header';
 import Sidebar from './Sidebar';
-import PageWrapper from './PageWrapper';
 
 const Layout = ({ ...props }) => {
   const { title, description, children } = props;
@@ -74,7 +73,9 @@ const Layout = ({ ...props }) => {
             setSidebarOpen(!sidebarIsOpen);
           }}
         />
-        <PageWrapper>{children}</PageWrapper>
+        <main id="content" style={{ marginTop: 52 }}>
+          {children}
+        </main>
       </div>
     </>
   );

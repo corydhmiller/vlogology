@@ -11,17 +11,18 @@ const Header = ({ ...props }) => {
 
   return (
     <header
-      className={`${styles.header} bg-black flex items-center w-full lg:hidden fixed top-0 left-0 z-40`}
+      className={`${styles.header} bg-purple-700 flex items-center w-full fixed top-0 left-0 z-40`}
     >
       <div className="header__menu">
         <div className="menu__button">
-          <Button
-            color="yellow"
+          <button
+            className="px-2 font-semibold text-white transition-all duration-200 rounded-full hover:bg-yellow-400 hover:text-black"
             onClick={toggleSidebar}
             onKeyUp={toggleSidebar}
+            type="button"
           >
             Menu
-          </Button>
+          </button>
         </div>
       </div>
       <div className={`${styles.logo} ml-auto`}>

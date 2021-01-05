@@ -1,48 +1,24 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 // import Image from 'next/image';
-import styled from 'styled-components';
 import Layout from './Layout';
-
-const HeaderImage = styled.img`
-  object-fit: cover;
-  object-position: center center;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  width: 100%;
-`;
 
 const Page = ({ ...props }) => {
   const { title, description, image, children } = props;
 
-  const conditionalImage = () => {
-    // This is janky af but I don't have the time
-    if (image) {
-      return <HeaderImage src={image} alt="" />;
-    }
-    return '';
-  };
-
   return (
     <Layout title={title} description={description}>
       <div
-        className={`relative w-full px-4 ${
-          image === 'none' ? 'py-12' : 'py-24 md:py-40'
-        } text-center bg-black`}
+        className="w-full py-12 mb-8 text-center rounded-br-lg sm:mb-12 sm:py-24 sm:w-7/12 bg-gradient-to-br from-purple-600 to-purple-700 "
+        style={{ boxShadow: '3px 3px 63px #4E2ECF' }}
       >
-        <div className="relative z-30 inline-block pb-8 border-yellow-400 border-b-md">
-          <h1 className="font-bold leading-tight text-white text-screen md:text-6xl">
+        <div className="z-30 inline-block px-4 pb-8">
+          <h1 className="font-bold leading-tight text-white text-screen sm:text-5xl lg:text-6xl">
             {title}
           </h1>
         </div>
-
-        {conditionalImage()}
-
-        <div className="absolute top-0 left-0 z-20 w-full h-full bg-gradient-to-t from-black" />
       </div>
-      <section className="py-12">{children}</section>
+      <section className="py-12 text-lg">{children}</section>
       <footer className="mt-12">
         <div className="w-full h-full p-8 text-xs text-gray-500 bg-gray-200">
           Vlogology &copy; {new Date().getFullYear()}
