@@ -21,7 +21,7 @@ const Layout = ({ ...props }) => {
         <meta charSet="utf-8" />
         <link rel="shortlink" href={siteURL} />
         <link rel="canonical" href={siteURL} />
-        <link rel="profile" href="http://gmpg.org/xfn/11" />
+        <link rel="profile" href="https://gmpg.org/xfn/11" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
 
         <meta name="twitter:image" content={featuredImage} />
