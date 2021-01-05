@@ -5,11 +5,14 @@ import Head from 'next/head';
 import Header from './Header';
 import Sidebar from './Sidebar';
 
+const url = process.env.NEXT_PUBLIC_URL
+  ? process.env.NEXT_PUBLIC_URL
+  : process.env.URL;
+
 const Layout = ({ ...props }) => {
   const { title, description, children } = props;
-
   const siteURL = 'https://vlogology.com';
-  const featuredImage = '/images/vlogology-featured-image.jpg';
+  const featuredImage = `${url}/images/vlogology-featured-image.jpg`;
 
   // Handle the sidebar staate from Layout so that we can toggle sidebar from anywhere
   const [sidebarIsOpen, setSidebarOpen] = React.useState(false);
