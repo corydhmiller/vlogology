@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
+
 // Components
 import Layout from '../components/Layout';
 import Video from '../components/Video';
@@ -12,6 +13,9 @@ import Heading from '../components/ui/Heading';
 import Image from '../components/ui/Image';
 
 const Home: React.FunctionComponent<null> = () => {
+  const introVideoEmbedUrl =
+    'https://www.youtube.com/embed/z8YF6XU7r4A?rel=0&amp;showinfo=0';
+
   return (
     <Layout title="Learn How To Vlog and Start Vlogging Today (FREE Guide and Lessons)">
       <section>
@@ -76,9 +80,10 @@ const Home: React.FunctionComponent<null> = () => {
             <Video>
               <iframe
                 title="video"
+                id="introVideo"
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/z8YF6XU7r4A?rel=0&amp;showinfo=0"
+                src={introVideoEmbedUrl}
                 frameBorder="0"
                 allow="autoplay; encrypted-media"
                 allowFullScreen
