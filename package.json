@@ -19,6 +19,7 @@
     "autoprefixer": "^10.1.0",
     "convertkit-react": "^1.4.2",
     "cssnano": "^4.1.10",
+    "fathom-client": "^3.0.0",
     "netlify-plugin-cache-nextjs": "^1.5.2",
     "next": "^10.0.0",
     "postcss": "^8.2.2",
