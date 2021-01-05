@@ -6,10 +6,10 @@ import SubscribeForm from '../../components/SubscribeForm';
 import CopyBlock from '../../components/ui/CopyBlock';
 
 const PageContent = () => {
-  // const nextPage = '/edit/define-a-rhythm';
+  // const nextPage = '/sharing/choose-a-platform';
 
   return (
-    <Page title="Hiring an editor">
+    <Page title="Define a rhythm">
       <CopyBlock>
         <p>
           <strong>This lesson is on its way!</strong>
