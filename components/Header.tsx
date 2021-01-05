@@ -7,13 +7,12 @@ import LogoImg from '../public/images/logo.svg';
 const Header = ({ ...props }) => {
   const { toggleSidebar } = props;
 
-  const handleCloseKeyup = (event: KeyboardEvent) => {
-    console.log(event);
+  const handleCloseKeyup = (event: React.KeyboardEvent) => {
     if (event.key === 'Enter' || event.key === ' ') {
       toggleSidebar();
     }
   };
-  const handleCloseKeydown = (event: React.BaseSyntheticEvent) => {
+  const handleCloseKeydown = (event: React.KeyboardEvent) => {
     event.preventDefault();
   };
 

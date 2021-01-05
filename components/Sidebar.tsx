@@ -9,12 +9,12 @@ import MenuSection from './Sidebar/MenuSection';
 const Sidebar = ({ ...props }) => {
   const { sidebarIsOpen, toggleSidebar } = props;
   const [activeMenu, setActiveMenu] = React.useState();
-  const handleCloseKeyup = (event: KeyboardEvent) => {
+  const handleCloseKeyup = (event: React.KeyboardEvent) => {
     if (event.key === 'Enter' || event.key === ' ') {
       toggleSidebar();
     }
   };
-  const handleCloseKeydown = (event: React.BaseSyntheticEvent) => {
+  const handleCloseKeydown = (event: React.KeyboardEvent) => {
     event.preventDefault();
   };
   return (
