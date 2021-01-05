@@ -1,7 +1,6 @@
 import * as React from 'react';
 // import Image from 'next/image';
 import Page from '../components/Page';
-import SubscribeForm from '../components/SubscribeForm';
 // UI
 import CopyBlock from '../components/ui/CopyBlock';
 import Button from '../components/ui/Button';
