@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-// import Image from 'next/image';
+import Image from '../../components/ui/Image';
 import Page from '../../components/Page';
 // UI
 import CopyBlock from '../../components/ui/CopyBlock';
@@ -69,7 +69,7 @@ const PageContent = () => {
 
         <Heading level="h3">Sony RX100</Heading>
 
-        <img
+        <Image
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/sony-rx100-miv.jpg"
@@ -123,7 +123,7 @@ const PageContent = () => {
 
         <Heading level="h3">Canon G7X Series</Heading>
 
-        <img
+        <Image
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/canon-g7x-mii.jpg"
@@ -209,7 +209,7 @@ const PageContent = () => {
 
         <Heading level="h3">Canon M50</Heading>
 
-        <img
+        <Image
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/canon-m50.jpg"
@@ -249,7 +249,7 @@ const PageContent = () => {
 
         <Heading level="h3">Canon 80d</Heading>
 
-        <img
+        <Image
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/canon-80d.jpg"
@@ -309,7 +309,7 @@ const PageContent = () => {
 
         <Heading level="h3">Panasonic Lumix GH5</Heading>
 
-        <img
+        <Image
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/panasonic-lumix-gh5.jpg"
@@ -351,7 +351,7 @@ const PageContent = () => {
 
         <Heading level="h3">Sony A7S series</Heading>
 
-        <img
+        <Image
           width={1200}
           height={900}
           src="/images/pages/cameras-commonly-used-by-vloggers/sony-a7s-ii.jpg"

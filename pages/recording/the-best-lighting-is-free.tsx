@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-// import Image from 'next/image';
+import Image from '../../components/ui/Image';
 import Page from '../../components/Page';
 // UI
 import CopyBlock from '../../components/ui/CopyBlock';
@@ -55,7 +55,7 @@ const PageContent = () => {
         </p>
       </CopyBlock>
       <div className="w-full max-w-4xl mx-auto my-12">
-        <img
+        <Image
           src="/images/using-sunlight-to-light-your-scene-1.jpg"
           alt="A frame from one of my videos that demonstrates poor lighting technique"
         />
@@ -89,7 +89,7 @@ const PageContent = () => {
         <p>But now look at the second image.</p>
       </CopyBlock>
       <div className="w-full max-w-4xl mx-auto my-12">
-        <img
+        <Image
           src="/images/using-sunlight-to-light-your-scene-2.jpg"
           alt="A frame from one of my videos that show better lighting by using sunlight"
         />

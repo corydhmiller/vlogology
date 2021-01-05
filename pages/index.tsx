@@ -1,5 +1,4 @@
 import * as React from 'react';
-// import Image from 'next/image';
 import Link from 'next/link';
 // Components
 import Layout from '../components/Layout';
@@ -10,6 +9,7 @@ import Blockquote from '../components/ui/Blockquote';
 import Button from '../components/ui/Button';
 import CopyBlock from '../components/ui/CopyBlock';
 import Heading from '../components/ui/Heading';
+import Image from '../components/ui/Image';
 
 const Home: React.FunctionComponent<null> = () => {
   return (
@@ -96,10 +96,10 @@ const Home: React.FunctionComponent<null> = () => {
         <div className="pt-12">
           <CopyBlock>
             <div className="p-2 pr-4 mx-auto sm:pl-0 sm:float-left">
-              <img
+              <Image
                 src="/images/cory-miller.png"
-                width="200"
-                height="200"
+                width={200}
+                height={200}
                 alt="Me, Cory Miller!"
               />
             </div>
@@ -160,7 +160,6 @@ const Home: React.FunctionComponent<null> = () => {
           </div>
         </div>
         <div className="w-full h-8 mb-12 ml-auto bg-primary-400" />
-
         <CopyBlock>
           <p>
             When I first started vlogging, I had no idea what I was supposed to
@@ -203,7 +202,6 @@ const Home: React.FunctionComponent<null> = () => {
             the process of vlogging has become part of my weekly routine.
           </p>
         </CopyBlock>
-
         <div className="max-w-4xl px-4 pt-4 pb-8 mx-auto mt-12">
           <div className="font-bold leading-tight text-center text-screen sm:text-7xl">
             Vlogging doesn’t have to be{' '}
@@ -243,31 +241,34 @@ const Home: React.FunctionComponent<null> = () => {
             </div>
           </CopyBlock>
         </div>
-
-        <div className="grid grid-cols-1 gap-6 py-16 mt-12 bg-primary-400 md:grid-cols-2">
-          <CopyBlock>
-            <h2 className="mb-4 text-2xl font-semibold serif">
-              You just have to start…
-            </h2>
-            <img
-              src="/images/pages/home/episode1-before.jpg"
-              width={1920}
-              height={1073}
-              alt="A frame from my very first vlog"
-            />
-          </CopyBlock>
-          <div className="mt-12">
-            <CopyBlock>
-              <h2 className="mb-4 text-2xl font-semibold serif">
-                …and improve as you go.
-              </h2>
-              <img
-                src="/images/pages/home/episode118-after.jpg"
-                width={1920}
-                height={1073}
-                alt="A frame from my 118th vlog"
-              />
-            </CopyBlock>
+        <div className="bg-primary-400">
+          <div className="grid max-w-4xl grid-cols-1 gap-6 py-16 mx-auto mt-12 bg-primary-400 md:grid-cols-2">
+            <div>
+              <CopyBlock>
+                <h2 className="mb-4 text-2xl font-semibold serif">
+                  You just have to start…
+                </h2>
+                <Image
+                  src="/images/pages/home/episode1-before.jpg"
+                  width={1920}
+                  height={1073}
+                  alt="A frame from my very first vlog"
+                />
+              </CopyBlock>
+            </div>
+            <div className="mt-12">
+              <CopyBlock>
+                <h2 className="mb-4 text-2xl font-semibold serif">
+                  …and improve as you go.
+                </h2>
+                <Image
+                  src="/images/pages/home/episode118-after.jpg"
+                  width={1920}
+                  height={1073}
+                  alt="A frame from my 118th vlog"
+                />
+              </CopyBlock>
+            </div>
           </div>
         </div>
         <div className="py-16 text-white bg-black">

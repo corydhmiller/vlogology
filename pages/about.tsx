@@ -1,5 +1,5 @@
 import * as React from 'react';
-// import Image from 'next/image';
+import Image from '../components/ui/Image';
 import Page from '../components/Page';
 // UI
 import CopyBlock from '../components/ui/CopyBlock';
@@ -13,10 +13,10 @@ const PageContent = () => {
     <Page title="About me">
       <CopyBlock>
         <div className="p-2 pr-4 mx-auto sm:pl-0 sm:float-left">
-          <img
+          <Image
             src="/images/cory-miller.png"
-            width="200"
-            height="200"
+            width={200}
+            height={200}
             alt="Me, Cory Miller!"
           />
         </div>

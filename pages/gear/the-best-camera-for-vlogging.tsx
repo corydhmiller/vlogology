@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-// import Image from 'next/image';
+import Image from '../../components/ui/Image';
 import Page from '../../components/Page';
 import Video from '../../components/Video';
 // UI
@@ -81,7 +81,7 @@ const PageContent = () => {
 
         <div className="grid max-w-4xl grid-cols-1 gap-6 mx-auto sm:grid-cols-2">
           <div className="px-5 pt-8 sm:px-8 sm:py-12">
-            <img
+            <Image
               src="/images/SonyA7II.jpg"
               width={660}
               height={494}
@@ -111,7 +111,7 @@ const PageContent = () => {
             </p>
           </CopyBlock>
           <div className="px-5 pt-8 sm:px-8 sm:py-12">
-            <img
+            <Image
               src="/images/RX100m3.jpg"
               width={660}
               height={494}
@@ -139,7 +139,7 @@ const PageContent = () => {
             </p>
           </CopyBlock>
           <div className="px-5 pt-8 sm:px-8 sm:py-12">
-            <img
+            <Image
               src="/images/iPhone.jpg"
               width={660}
               height={494}

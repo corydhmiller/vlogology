@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-// import Image from 'next/image';
+import Image from '../../components/ui/Image';
 import Page from '../../components/Page';
 // UI
 import CopyBlock from '../../components/ui/CopyBlock';
@@ -71,7 +71,7 @@ const PageContent = () => {
 
         <div className="grid max-w-4xl grid-cols-1 gap-6 mx-auto sm:grid-cols-2">
           <div className="relative px-5 pt-8 sm:px-8 sm:py-12">
-            <img
+            <Image
               src="/images/video-micro-white.jpg"
               width={1000}
               height={1000}
@@ -113,7 +113,7 @@ const PageContent = () => {
             </p>
           </CopyBlock>
           <div className="px-5 pt-8 sm:px-8 sm:py-12">
-            <img
+            <Image
               src="/images/videomic-pro-white.jpg"
               width={1000}
               height={1000}
@@ -155,7 +155,7 @@ const PageContent = () => {
             </p>
           </CopyBlock>
           <div className="px-5 pt-8 sm:px-8 sm:py-12">
-            <img
+            <Image
               src="/images/videomic-pro-plus-white.jpg"
               width={1000}
               height={756}
@@ -197,7 +197,7 @@ const PageContent = () => {
             </p>
           </CopyBlock>
           <div className="px-5 pt-8 sm:px-8 sm:py-12">
-            <img
+            <Image
               src="/images/rodesmartlav.jpg"
               width={1000}
               height={1000}
@@ -233,7 +233,7 @@ const PageContent = () => {
             </p>
           </CopyBlock>
           <div className="px-5 pt-8 sm:px-8 sm:py-12">
-            <img
+            <Image
               src="/images/shuremv88.jpg"
               width={1000}
               height={1000}
@@ -277,7 +277,7 @@ const PageContent = () => {
             </p>
           </CopyBlock>
           <div className="px-5 pt-8 sm:px-8 sm:py-12">
-            <img
+            <Image
               src="/images/rodevideomicme.jpg"
               width={750}
               height={750}
