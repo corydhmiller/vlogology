@@ -58,7 +58,7 @@ const PageContent = () => {
       </CopyBlock>
       <Massive>
         To be interesting, you just need to{' '}
-        <span className="text-yellow-400 text-shadow-sm">be you</span>.
+        <span className="text-primary-400 text-shadow-sm">be you</span>.
       </Massive>
       <CopyBlock>
         <p>

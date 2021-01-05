@@ -6,16 +6,16 @@ p {
 // text-lg sm:text-2xl my-8 mx-4 lg:mt-8 lg:mb-16 font-bold italic text-gray-500 px-4
 
 blockquote {
-  border-left: 2rem solid $yellow;
+  border-left: 2rem solid var(--primary-400);
 }
 
 .text-shadow-sm {
-  text-shadow: -1px 1px 0 $lessblack;
+  text-shadow: -1px 1px 0 var(--gray-800);
 }
 
 code {
-  color: $black;
-  background: $yellow;
+  color: var(--black);
+  background: var(--primary-400);
   font-size: 1rem;
   padding: 0 6px;
   font-weight: 600;

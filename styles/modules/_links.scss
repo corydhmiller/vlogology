@@ -2,9 +2,9 @@ a {
   text-decoration: underline;
   font-weight: bold;
   @include transition($fast);
-  color: $orange;
+  color: var(--secondary);
 
   &:hover {
-    color: lighten($orange, 10%);
+    text-decoration: none;
   }
 }

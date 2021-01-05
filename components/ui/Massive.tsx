@@ -9,7 +9,7 @@ const Massive = ({ ...props }) => {
           {children}
         </div>
       </div>
-      <div className="w-full h-8 mt-4 ml-auto bg-yellow-400" />
+      <div className="w-full h-8 mt-4 ml-auto bg-primary-400" />
     </div>
   );
 };

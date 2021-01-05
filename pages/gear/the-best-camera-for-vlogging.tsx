@@ -299,7 +299,7 @@ const PageContent = () => {
 
       <Massive>
         Do not let the lack of{' '}
-        <span className="text-yellow-400 text-shadow-sm">“gear”</span> stop you
+        <span className="text-primary-400 text-shadow-sm">“gear”</span> stop you
         from vlogging.
       </Massive>
       <CopyBlock>

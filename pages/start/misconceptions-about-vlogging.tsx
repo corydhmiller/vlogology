@@ -79,7 +79,7 @@ const PageContent = () => {
       </CopyBlock>
       <Massive>
         You don’t have to start{' '}
-        <span className="text-yellow-400 text-shadow-sm">fancy</span> (or go
+        <span className="text-primary-400 text-shadow-sm">fancy</span> (or go
         fancy at all.)
       </Massive>
       <CopyBlock>

@@ -81,7 +81,7 @@ const PageContent = () => {
         <p>Here’s the truth about gear:</p>
       </CopyBlock>
       <Massive>
-        <span className="text-yellow-400 text-shadow-sm">
+        <span className="text-primary-400 text-shadow-sm">
           Technology is already outdated
         </span>{' '}
         by the time you buy it.

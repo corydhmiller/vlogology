@@ -6,13 +6,13 @@
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: $white;
-  background: $blue;
+  color: var(--white);
+  background: var(--blue);
 }
 
 ::selection {
-  color: $white;
-  background: $blue;
+  color: var(--white);
+  background: var(--blue);
 }
 
 html {
@@ -26,8 +26,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: $black;
-  background: $white;
+  color: var(--black);
+  background: var(--white);
   font-family: $sans;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -50,7 +50,7 @@ li {
 
   &:before {
     content: '•';
-    color: $black;
+    color: var(--black);
     margin-right: 0.35rem;
   }
 }

@@ -9,32 +9,28 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
 
-      black: '#252529',
-      white: '#fcfcfd',
+      black: 'var(--black)',
+      white: 'var(--white)',
+      blue: 'var(--blue)',
 
-      orange: '#ea9234',
-      red: '#d5443c',
-      darkred: '#d5443c',
-      green: '#5dd961',
-      blue: '#5bcaeb',
-      purple: {
-        400: '#4E2ECF',
-        600: '#1A0D39',
-        700: '#140C1F'
+      primary: {
+        300: 'var(--primary-300)',
+        400: 'var(--primary-400)',
+        600: 'var(--primary-600)'
+      },
+      secondary: 'var(--secondary)',
+      tertiary: {
+        400: 'var(--tertiary-400)',
+        600: 'var(--tertiary-600)',
+        700: 'var(--tertiary-700)'
       },
 
-      yellow: {
-        300: '#fced65',
-        400: '#f7dd38',
-        600: '#f0c811'
-      },
       gray: {
-        200: '#ededf2',
-        300: '#dadae3',
-        400: '#cbd5e0',
-        500: '#53535b',
-        600: '#3b3b40',
-        800: '#2e2e33'
+        200: 'var(--gray-200)',
+        300: 'var(--gray-300)',
+        500: 'var(--gray-500)',
+        600: 'var(--gray-600)',
+        800: 'var(--gray-800)'
       }
     },
     spacing: {

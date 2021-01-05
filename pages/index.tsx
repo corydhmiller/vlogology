@@ -17,7 +17,7 @@ const Home: React.FunctionComponent<null> = () => {
       <section>
         <div className="w-full">
           <div className="grid md:grid-cols-2">
-            <div className="py-12 text-2xl text-right bg-yellow-400 serif hero-left">
+            <div className="py-12 text-2xl text-right bg-primary-400 serif hero-left">
               <CopyBlock>
                 <h2 className="mb-8 font-serif text-5xl font-bold">“vlog”</h2>
                 <div className="font-serif text-2xl italic opacity-75">
@@ -155,11 +155,11 @@ const Home: React.FunctionComponent<null> = () => {
         <div className="max-w-5xl px-4 my-12 ml-auto">
           <div className="font-bold leading-tight text-screen sm:text-7xl">
             Vlogs are{' '}
-            <span className="text-yellow-400 text-shadow-sm">stories</span>, and
-            everyone has a story.
+            <span className="text-primary-400 text-shadow-sm">stories</span>,
+            and everyone has a story.
           </div>
         </div>
-        <div className="w-full h-8 mb-12 ml-auto bg-yellow-400" />
+        <div className="w-full h-8 mb-12 ml-auto bg-primary-400" />
 
         <CopyBlock>
           <p>
@@ -207,10 +207,12 @@ const Home: React.FunctionComponent<null> = () => {
         <div className="max-w-4xl px-4 pt-4 pb-8 mx-auto mt-12">
           <div className="font-bold leading-tight text-center text-screen sm:text-7xl">
             Vlogging doesn’t have to be{' '}
-            <span className="text-yellow-400 text-shadow-sm">complicated.</span>
+            <span className="text-primary-400 text-shadow-sm">
+              complicated.
+            </span>
           </div>
         </div>
-        <div className="w-full h-8 ml-auto bg-yellow-400" />
+        <div className="w-full h-8 ml-auto bg-primary-400" />
         <div className="my-12 sm:mt-24">
           <CopyBlock>
             <Heading level="h2">Start Vlogging Without the Headaches</Heading>
@@ -242,7 +244,7 @@ const Home: React.FunctionComponent<null> = () => {
           </CopyBlock>
         </div>
 
-        <div className="grid grid-cols-1 gap-6 py-16 mt-12 bg-yellow-400 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 py-16 mt-12 bg-primary-400 md:grid-cols-2">
           <CopyBlock>
             <h2 className="mb-4 text-2xl font-semibold serif">
               You just have to start…
@@ -271,8 +273,8 @@ const Home: React.FunctionComponent<null> = () => {
         <div className="py-16 text-white bg-black">
           <CopyBlock>
             <Heading level="h2">
-              <span className="text-yellow-400">Get New Lessons</span> Delivered
-              To You Every Week
+              <span className="text-primary-400">Get New Lessons</span>{' '}
+              Delivered To You Every Week
             </Heading>
             <p>
               Vlogology is your one-stop shop for{' '}
@@ -330,7 +332,7 @@ const Home: React.FunctionComponent<null> = () => {
             <p>I look forward to hearing from you!</p>
           </CopyBlock>
         </div>
-        <div className="w-full h-8 ml-auto bg-yellow-400" />
+        <div className="w-full h-8 ml-auto bg-primary-400" />
       </section>
     </Layout>
   );

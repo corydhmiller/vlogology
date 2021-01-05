@@ -9,8 +9,8 @@ const Page = ({ ...props }) => {
   return (
     <Layout title={title} description={description}>
       <div
-        className="w-full py-12 mb-8 text-center rounded-br-lg sm:mb-12 sm:py-24 sm:w-7/12 bg-gradient-to-br from-purple-600 to-purple-700 "
-        style={{ boxShadow: '3px 3px 63px #4E2ECF' }}
+        className="w-full py-12 mb-8 text-center rounded-br-lg sm:mb-12 sm:py-24 sm:w-7/12 bg-gradient-to-br from-tertiary-600 to-tertiary-700 "
+        style={{ boxShadow: '3px 3px 63px var(--tertiary-400)' }}
       >
         <div className="z-30 inline-block px-4 pb-8">
           <h1 className="font-bold leading-tight text-white text-screen sm:text-5xl lg:text-6xl">

@@ -78,7 +78,8 @@ const PageContent = () => {
       </CopyBlock>
       <Massive>
         Forget the duck and{' '}
-        <span className="text-yellow-400 text-shadow-sm">grab the camera</span>.
+        <span className="text-primary-400 text-shadow-sm">grab the camera</span>
+        .
       </Massive>
       <CopyBlock>
         <p>

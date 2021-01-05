@@ -14,7 +14,7 @@ HR.propTypes = {
   color: PropTypes.string
 };
 HR.defaultProps = {
-  color: 'border-yellow-600'
+  color: 'border-primary-600'
 };
 
 export default HR;

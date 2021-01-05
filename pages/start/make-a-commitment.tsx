@@ -129,7 +129,7 @@ const PageContent = () => {
       </CopyBlock>
       <Massive>
         I needed to do something different or I needed to quit…and{' '}
-        <span className="text-yellow-400 text-shadow-sm">
+        <span className="text-primary-400 text-shadow-sm">
           I didn’t want to quit
         </span>
         .

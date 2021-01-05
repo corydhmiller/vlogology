@@ -60,7 +60,7 @@ const PageContent = () => {
       <CopyBlock>
         <div className="w-full my-12">
           <div
-            className="4k bg-orange"
+            className="4k bg-secondary"
             style={{
               height: 0,
               paddingTop: 25,
@@ -79,7 +79,7 @@ const PageContent = () => {
               }}
             >
               <div
-                className="bg-yellow-400 1080"
+                className="bg-primary-400 1080"
                 style={{
                   height: 0,
                   paddingBottom: '56.25%',

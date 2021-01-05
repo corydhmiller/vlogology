@@ -8,7 +8,7 @@ const Heading = ({ ...props }) => {
     case 'h2':
       return (
         <h2
-          className={`inline-block my-8 text-3xl font-bold border-yellow-400 border-b-sm${
+          className={`inline-block my-8 text-3xl font-bold border-primary-400 border-b-sm${
             classes ? ` ${classes}` : ''
           }`}
         >
@@ -29,7 +29,7 @@ const Heading = ({ ...props }) => {
       break;
     default:
       return (
-        <h2 className="inline-block mt-8 mb-4 text-3xl font-bold border-yellow-400 border-b-sm">
+        <h2 className="inline-block mt-8 mb-4 text-3xl font-bold border-primary-400 border-b-sm">
           {children}
         </h2>
       );

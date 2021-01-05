@@ -31,15 +31,15 @@
     padding: 10px 8px;
     width: 100%;
     border: 1px solid #d6d6d6; /* stroke */
-    background-color: $white; /* layer fill content */
-    color: $black;
+    background-color: var(--white); /* layer fill content */
+    color: var(--black);
     padding-left: 0.75rem;
     border-radius: 2rem;
     height: auto;
     height: 42px;
 
     &::placeholder {
-      color: $lessblack;
+      color: var(--gray-800);
     }
   }
 
@@ -50,9 +50,9 @@
     transform: scale(1.045);
   }
   button {
-    color: $black;
-    background: $yellow;
-    box-shadow: 0 0 0 0 $darkyellow;
+    color: var(--black);
+    background: var(--primary-400);
+    box-shadow: 0 0 0 0 var(--primary-600);
     border-radius: 9999px;
     padding: 0.35rem 0.75rem;
     font-weight: 600;
@@ -62,13 +62,13 @@
     &:focus {
       cursor: pointer;
       transform: scale(1.06);
-      box-shadow: 0 3px 0 0 $darkyellow;
+      box-shadow: 0 3px 0 0 var(--primary-600);
     }
   }
 
   .ck_converted_content {
     display: none;
     padding: 5%;
-    background: $white;
+    background: var(--white);
   }
 }

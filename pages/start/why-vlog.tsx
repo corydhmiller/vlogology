@@ -44,7 +44,7 @@ const PageContent = () => {
 
       <div className="grid grid-cols-1 mt-16 sm:grid-cols-2">
         <div className="my-8 sm:pr-4 sm:mt-0">
-          <div className="p-4 text-right bg-yellow-400 sm:p-12">
+          <div className="p-4 text-right bg-primary-400 sm:p-12">
             <h2 className="font-serif text-5xl font-semibold">“vlog”</h2>
             <p>a short story or memory told through video</p>
           </div>
@@ -99,7 +99,7 @@ const PageContent = () => {
       </div>
       <Massive>
         It’s easier than ever to{' '}
-        <span className="text-yellow-400 text-shadow-sm">
+        <span className="text-primary-400 text-shadow-sm">
           publish something online
         </span>
         .
@@ -116,7 +116,7 @@ const PageContent = () => {
           video.
         </p>
 
-        <h2 className="mt-8 mb-4 text-3xl font-bold border-yellow-400 border-b-sm">
+        <h2 className="mt-8 mb-4 text-3xl font-bold border-primary-400 border-b-sm">
           But why have a vlog?
         </h2>
 

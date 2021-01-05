@@ -18,7 +18,7 @@ const MenuLink = ({ link, content }: MenuLinkTypes) => {
     <li className={`${styles.link} pl-2 mb-2 pt-1 leading-tight relative`}>
       <Link href={link}>
         <a
-          className={`hover:bg-yellow-400 p-1 hover:text-black text-white no-underline font-normal${
+          className={`hover:bg-primary-400 p-1 hover:text-black text-white no-underline font-normal${
             router.route === link ? ' bg-gray-500' : ''
           }`}
           href={link}

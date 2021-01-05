@@ -18,12 +18,12 @@ const Header = ({ ...props }) => {
 
   return (
     <header
-      className={`${styles.header} bg-purple-700 flex items-center w-full fixed top-0 left-0 z-40`}
+      className={`${styles.header} bg-tertiary-700 flex items-center w-full fixed top-0 left-0 z-40`}
     >
       <div className="header__menu">
         <div className="menu__button">
           <button
-            className="px-2 font-semibold text-white transition-all duration-200 rounded-full hover:bg-yellow-400 hover:text-black"
+            className="px-2 font-semibold text-white transition-all duration-200 rounded-full hover:bg-primary-400 hover:text-black"
             onClick={toggleSidebar}
             onKeyUp={handleCloseKeyup}
             onKeyDown={handleCloseKeydown}

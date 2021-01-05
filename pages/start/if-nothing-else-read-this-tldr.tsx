@@ -29,7 +29,7 @@ const PageContent = () => {
       </CopyBlock>
       <Massive>
         Seriously.{' '}
-        <span className="text-yellow-400 text-shadow-sm">
+        <span className="text-primary-400 text-shadow-sm">
           Just get started.
         </span>
       </Massive>

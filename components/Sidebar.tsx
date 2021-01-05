@@ -20,7 +20,7 @@ const Sidebar = ({ ...props }) => {
   return (
     <aside
       id="sidebar"
-      style={{ backgroundColor: '#1c142e' }}
+      style={{ backgroundColor: 'var(--tertiary-700)' }}
       className={`${
         styles.sidebar
       } flex flex-col  z-50 text-white fixed overflow-y-scroll top-0 h-screen ${
@@ -31,7 +31,7 @@ const Sidebar = ({ ...props }) => {
         <div className={styles.menu__button}>
           <button
             type="button"
-            className="px-2 font-semibold text-white transition-all duration-200 rounded-full hover:bg-yellow-400 hover:text-black"
+            className="px-2 font-semibold text-white transition-all duration-200 rounded-full hover:bg-primary-400 hover:text-black"
             onClick={toggleSidebar}
             onKeyUp={handleCloseKeyup}
             onKeyDown={handleCloseKeydown}

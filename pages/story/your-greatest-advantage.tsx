@@ -83,7 +83,7 @@ const PageContent = () => {
       </CopyBlock>
       <Massive>
         No one else has lived{' '}
-        <span className="text-yellow-400 text-shadow-sm">your life</span>.
+        <span className="text-primary-400 text-shadow-sm">your life</span>.
       </Massive>
       <CopyBlock>
         <p>

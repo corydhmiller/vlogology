@@ -82,7 +82,7 @@ const PageContent = () => {
         </p>
       </CopyBlock>
       <Massive>
-        <span className="text-yellow-400 text-shadow-sm">
+        <span className="text-primary-400 text-shadow-sm">
           A vlog is little pieces of history
         </span>{' '}
         just waiting to be remembered.

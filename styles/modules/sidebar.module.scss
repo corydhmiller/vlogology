@@ -21,7 +21,7 @@ $sidebarWidth: 350px;
 }
 
 .nav {
-  border-top: 1px solid $grey;
+  border-top: 1px solid var(--gray-500);
 
   & a:after {
     display: none;
@@ -36,14 +36,14 @@ $sidebarWidth: 350px;
   display: flex;
   margin-top: auto;
   padding: 1rem 0;
-  background: $grey;
+  background: var(--gray-500);
 
   &_section {
     flex-grow: 1;
     text-align: center;
 
     &:first-child {
-      border-right: 1px solid $grey;
+      border-right: 1px solid var(--gray-500);
     }
   }
 }
@@ -65,7 +65,7 @@ $sidebarWidth: 350px;
     height: 100%;
     z-index: -1;
     left: 0;
-    background: $yellow;
+    background: var(--primary-400);
 
     @include transition($ease);
   }
