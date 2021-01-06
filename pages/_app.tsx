@@ -15,7 +15,7 @@ function VlogologyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     // Initialize Fathom when the app loads
     Fathom.load('PBECBCLF', {
-      includedDomains: ['https://vlogology.com']
+      includedDomains: ['vlogology.com']
     });
 
     function onRouteChangeComplete() {
