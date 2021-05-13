@@ -23,7 +23,7 @@
     "fathom-client": "^3.0.0",
     "netlify-plugin-cache-nextjs": "^1.5.2",
     "next": "^10.0.0",
-    "postcss": "^8.2.2",
+    "postcss": "^8.2.10",
     "postcss-cli": "^8.3.1",
     "prettier": "^2.1.2",
     "prop-types": "^15.7.2",
